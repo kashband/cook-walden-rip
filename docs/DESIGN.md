@@ -1,0 +1,109 @@
+# Design
+
+## Overview
+
+A static, geo-accurate interactive map of the IABA section of Cook-Walden Capital Parks
+(Pflugerville, TX). Users see the section from above on satellite imagery, with every
+plot drawn as a colored polygon: who is buried where, what's reserved, and what's
+available to inquire about. Modeled on Chronicle's cemetery maps (e.g.
+https://map.chronicle.rip/HIC): aerial base layer, color-coded plot polygons, click a
+plot → detail view, deceased search.
+
+Section center: `30.43730366645736, -97.66220675345387`.
+
+## Architecture
+
+```
+Vite + React + TypeScript (static build)
+├── Leaflet via react-leaflet         — map shell
+│   └── Esri World Imagery tiles      — satellite base layer
+├── data/plots.geojson                — plot polygons + status/person properties
+├── data/section.geojson              — IABA section boundary
+├── #/plot/<id> hash routes           — shareable per-plot pages on a static host
+└── /editor dev route                 — grid generator (authoring tool, not for visitors)
+```
+
+No backend, no database, no auth, no API keys. All state a visitor sees comes from
+committed flat files. "Editing" the cemetery = editing GeoJSON (via the editor's export
+or by hand) and committing.
+
+## Imagery & licensing
+
+- **Base layer: Esri World Imagery** (`https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}`).
+  Free with attribution ("Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics…").
+  Resolution over Pflugerville is good enough to see grave rows.
+- **Do not use Google Maps/Earth tiles** — their license prohibits use outside Google's
+  own APIs and prohibits this kind of overlay reuse.
+- **Fallback/verification:** TxGIO (TNRIS) publishes free high-res Texas orthoimagery;
+  useful for cross-checking alignment.
+- **Future upgrade:** a drone orthophoto of just the IABA section, georeferenced and
+  served as a Leaflet ImageOverlay on top of the Esri tiles.
+
+## Grid generator (`/editor`)
+
+The hardest, most iterative part of the project. Cemetery plots are regular rectangles
+laid out in rows, so we generate them parametrically instead of drawing hundreds of
+polygons by hand.
+
+Inputs (form + on-map interaction):
+
+1. **Origin corner** — click on the map to place the grid's anchor point
+2. **Bearing** — rotation of the grid in degrees (rows rarely align to true north)
+3. **Rows × columns** — counts
+4. **Plot size** — width × length in meters (default ≈ 1.2 m × 3.0 m, a standard grave)
+5. **Gaps** — optional walkway spacing between rows / between blocks of columns
+
+Behavior:
+
+- Grid regenerates live as parameters change (`@turf/destination` from the origin along
+  the bearing for each cell corner)
+- Nudge controls: arrow-key/button offsets for origin, fine bearing adjustment, so the
+  grid can be visually aligned against visible graves in the imagery
+- Cells get placeholder IDs (`A-1` … row letter + space number) at generation time
+- Stretch (M5): tap a cell to cycle its status — turns the editor into an on-site
+  survey tool on a phone
+- **Export** button downloads `plots.geojson`; the user commits it. The editor never
+  writes files itself — the repo stays the single source of truth.
+
+The editor route ships in the dev build only (or behind an obvious `?editor` flag);
+visitors never see it.
+
+## Visitor-facing map
+
+- Opens centered/zoomed on the IABA section, section boundary outlined
+- Plot polygons color-coded by status:
+
+  | Status    | Color                | Meaning                          |
+  |-----------|----------------------|----------------------------------|
+  | occupied  | slate/gray           | burial present                   |
+  | reserved  | amber                | claimed, not yet used            |
+  | available | green                | open — inquiry link shown        |
+  | unknown   | translucent/hatched  | not yet surveyed                 |
+
+- Legend always visible; hover (desktop) shows plot ID + name tooltip
+- Click/tap → plot detail
+
+## Plot detail view
+
+Sidebar panel on desktop, bottom sheet on mobile, addressable as `#/plot/A-12`.
+
+- Plot ID, row/space, status badge
+- **Occupied/reserved:** person name, dates (dob/dod), optional notes; photos later
+- **Available:** "Contact IABA about this plot" — `mailto:` (and optionally `tel:`) link
+  with subject/body prefilled with the plot ID. No forms, no payments.
+- **Unknown:** "Not yet surveyed" message
+
+## Search
+
+Simple client-side name search over `plots.geojson` properties (a text input filtering
+occupied/reserved plots; selecting a result pans/zooms to the plot and opens its
+detail). Cheap because the whole dataset is already in memory.
+
+## Future phases (explicitly out of POC scope)
+
+- GPS walk-to-grave (browser geolocation + heading toward plot centroid)
+- Import of real Cook-Walden/IABA records; real plot numbering
+- Drone orthophoto base layer
+- Google Sheet–backed status editing for non-technical maintainers
+- Photo galleries / memorial content per plot
+- Real purchase/inquiry workflow (forms, notifications)
