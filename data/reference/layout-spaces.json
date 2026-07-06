@@ -1,0 +1,8744 @@
+{
+ "source": "IABA-Layout.pdf digitized by scripts/digitize_layout.py",
+ "image": "IABA-Layout.png",
+ "image_size": [
+  4800,
+  3709
+ ],
+ "cell_px": [
+  70.0,
+  103.0
+ ],
+ "status_counts": {
+  "available": 278,
+  "occupied": 130,
+  "reserved": 177,
+  "unusable": 22,
+  "bohri": 64
+ },
+ "spaces": [
+  {
+   "lot": 1,
+   "space": "B1",
+   "id": "01-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2898.5,
+    531.9,
+    2968.5,
+    634.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "B2",
+   "id": "01-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2968.5,
+    531.9,
+    3038.5,
+    634.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "B3",
+   "id": "01-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3038.5,
+    531.9,
+    3108.5,
+    634.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "B4",
+   "id": "01-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3108.5,
+    531.9,
+    3178.5,
+    634.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "C2",
+   "id": "01-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2688.5,
+    634.9,
+    2758.5,
+    737.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "C3",
+   "id": "01-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2758.5,
+    634.9,
+    2828.5,
+    737.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "C4",
+   "id": "01-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2828.5,
+    634.9,
+    2898.5,
+    737.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "D1",
+   "id": "01-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2898.5,
+    634.9,
+    2968.5,
+    737.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "D2",
+   "id": "01-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2968.5,
+    634.9,
+    3038.5,
+    737.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "D3",
+   "id": "01-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3038.5,
+    634.9,
+    3108.5,
+    737.9
+   ]
+  },
+  {
+   "lot": 1,
+   "space": "D4",
+   "id": "01-D4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3108.5,
+    634.9,
+    3178.5,
+    737.9
+   ]
+  },
+  {
+   "lot": 2,
+   "space": "C1",
+   "id": "02-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2055.8,
+    635.5,
+    2125.8,
+    738.5
+   ]
+  },
+  {
+   "lot": 2,
+   "space": "C2",
+   "id": "02-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2125.8,
+    635.5,
+    2195.8,
+    738.5
+   ]
+  },
+  {
+   "lot": 2,
+   "space": "C3",
+   "id": "02-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2195.8,
+    635.5,
+    2265.8,
+    738.5
+   ]
+  },
+  {
+   "lot": 2,
+   "space": "C4",
+   "id": "02-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2265.8,
+    635.5,
+    2335.8,
+    738.5
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "A1",
+   "id": "03-A1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2618.3,
+    737.2,
+    2688.3,
+    840.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "A2",
+   "id": "03-A2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2688.3,
+    737.2,
+    2758.3,
+    840.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "A3",
+   "id": "03-A3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2758.3,
+    737.2,
+    2828.3,
+    840.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "A4",
+   "id": "03-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2828.3,
+    737.2,
+    2898.3,
+    840.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "B1",
+   "id": "03-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2898.3,
+    737.2,
+    2968.3,
+    840.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "B2",
+   "id": "03-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2968.3,
+    737.2,
+    3038.3,
+    840.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "B3",
+   "id": "03-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3038.3,
+    737.2,
+    3108.3,
+    840.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "B4",
+   "id": "03-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3108.3,
+    737.2,
+    3178.3,
+    840.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "C1",
+   "id": "03-C1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2618.3,
+    840.2,
+    2688.3,
+    943.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "C2",
+   "id": "03-C2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2688.3,
+    840.2,
+    2758.3,
+    943.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "C3",
+   "id": "03-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2758.3,
+    840.2,
+    2828.3,
+    943.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "C4",
+   "id": "03-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2828.3,
+    840.2,
+    2898.3,
+    943.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "D1",
+   "id": "03-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2898.3,
+    840.2,
+    2968.3,
+    943.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "D2",
+   "id": "03-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2968.3,
+    840.2,
+    3038.3,
+    943.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "D3",
+   "id": "03-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3038.3,
+    840.2,
+    3108.3,
+    943.2
+   ]
+  },
+  {
+   "lot": 3,
+   "space": "D4",
+   "id": "03-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3108.3,
+    840.2,
+    3178.3,
+    943.2
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "A1",
+   "id": "04-A1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2055.3,
+    738.4,
+    2125.3,
+    841.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "A2",
+   "id": "04-A2",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2125.3,
+    738.4,
+    2195.3,
+    841.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "A3",
+   "id": "04-A3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2195.3,
+    738.4,
+    2265.3,
+    841.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "A4",
+   "id": "04-A4",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2265.3,
+    738.4,
+    2335.3,
+    841.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "B1",
+   "id": "04-B1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2335.3,
+    738.4,
+    2405.3,
+    841.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "C1",
+   "id": "04-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2055.3,
+    841.4,
+    2125.3,
+    944.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "C2",
+   "id": "04-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2125.3,
+    841.4,
+    2195.3,
+    944.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "C3",
+   "id": "04-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2195.3,
+    841.4,
+    2265.3,
+    944.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "C4",
+   "id": "04-C4",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2265.3,
+    841.4,
+    2335.3,
+    944.4
+   ]
+  },
+  {
+   "lot": 4,
+   "space": "D1",
+   "id": "04-D1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2335.3,
+    841.4,
+    2405.3,
+    944.4
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "A1",
+   "id": "05-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1494.4,
+    737.3,
+    1564.4,
+    840.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "A2",
+   "id": "05-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1564.4,
+    737.3,
+    1634.4,
+    840.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "A3",
+   "id": "05-A3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1634.4,
+    737.3,
+    1704.4,
+    840.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "A4",
+   "id": "05-A4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1704.4,
+    737.3,
+    1774.4,
+    840.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "B1",
+   "id": "05-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1774.4,
+    737.3,
+    1844.4,
+    840.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "B2",
+   "id": "05-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1844.4,
+    737.3,
+    1914.4,
+    840.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "B3",
+   "id": "05-B3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1914.4,
+    737.3,
+    1984.4,
+    840.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "B4",
+   "id": "05-B4",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1984.4,
+    737.3,
+    2054.4,
+    840.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "C1",
+   "id": "05-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1494.4,
+    840.3,
+    1564.4,
+    943.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "C3",
+   "id": "05-C3",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    1634.4,
+    840.3,
+    1704.4,
+    943.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "C4",
+   "id": "05-C4",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    1704.4,
+    840.3,
+    1774.4,
+    943.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "D1",
+   "id": "05-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1774.4,
+    840.3,
+    1844.4,
+    943.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "D2",
+   "id": "05-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1844.4,
+    840.3,
+    1914.4,
+    943.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "D3",
+   "id": "05-D3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1914.4,
+    840.3,
+    1984.4,
+    943.3
+   ]
+  },
+  {
+   "lot": 5,
+   "space": "D4",
+   "id": "05-D4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1984.4,
+    840.3,
+    2054.4,
+    943.3
+   ]
+  },
+  {
+   "lot": 6,
+   "space": "C3",
+   "id": "06-C3",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1073.9,
+    841.1,
+    1143.9,
+    944.1
+   ]
+  },
+  {
+   "lot": 6,
+   "space": "C4",
+   "id": "06-C4",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1143.9,
+    841.1,
+    1213.9,
+    944.1
+   ]
+  },
+  {
+   "lot": 6,
+   "space": "D1",
+   "id": "06-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1213.9,
+    841.1,
+    1283.9,
+    944.1
+   ]
+  },
+  {
+   "lot": 6,
+   "space": "D2",
+   "id": "06-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1283.9,
+    841.1,
+    1353.9,
+    944.1
+   ]
+  },
+  {
+   "lot": 6,
+   "space": "D3",
+   "id": "06-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1353.9,
+    841.1,
+    1423.9,
+    944.1
+   ]
+  },
+  {
+   "lot": 6,
+   "space": "D4",
+   "id": "06-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1423.9,
+    841.1,
+    1493.9,
+    944.1
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "A1",
+   "id": "07-A1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2615.0,
+    945.8,
+    2685.0,
+    1048.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "A2",
+   "id": "07-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2685.0,
+    945.8,
+    2755.0,
+    1048.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "A3",
+   "id": "07-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2755.0,
+    945.8,
+    2825.0,
+    1048.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "A4",
+   "id": "07-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2825.0,
+    945.8,
+    2895.0,
+    1048.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "B1",
+   "id": "07-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2895.0,
+    945.8,
+    2965.0,
+    1048.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "B2",
+   "id": "07-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2965.0,
+    945.8,
+    3035.0,
+    1048.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "B3",
+   "id": "07-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3035.0,
+    945.8,
+    3105.0,
+    1048.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "B4",
+   "id": "07-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3105.0,
+    945.8,
+    3175.0,
+    1048.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "C1",
+   "id": "07-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2615.0,
+    1048.8,
+    2685.0,
+    1151.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "C2",
+   "id": "07-C2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2685.0,
+    1048.8,
+    2755.0,
+    1151.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "C3",
+   "id": "07-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2755.0,
+    1048.8,
+    2825.0,
+    1151.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "C4",
+   "id": "07-C4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2825.0,
+    1048.8,
+    2895.0,
+    1151.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "D1",
+   "id": "07-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2895.0,
+    1048.8,
+    2965.0,
+    1151.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "D2",
+   "id": "07-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2965.0,
+    1048.8,
+    3035.0,
+    1151.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "D3",
+   "id": "07-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3035.0,
+    1048.8,
+    3105.0,
+    1151.8
+   ]
+  },
+  {
+   "lot": 7,
+   "space": "D4",
+   "id": "07-D4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3105.0,
+    1048.8,
+    3175.0,
+    1151.8
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "A1",
+   "id": "08-A1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2054.1,
+    945.0,
+    2124.1,
+    1048.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "A2",
+   "id": "08-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2124.1,
+    945.0,
+    2194.1,
+    1048.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "A3",
+   "id": "08-A3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2194.1,
+    945.0,
+    2264.1,
+    1048.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "A4",
+   "id": "08-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2264.1,
+    945.0,
+    2334.1,
+    1048.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "B1",
+   "id": "08-B1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2334.1,
+    945.0,
+    2404.1,
+    1048.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "C1",
+   "id": "08-C1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2054.1,
+    1048.0,
+    2124.1,
+    1151.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "C2",
+   "id": "08-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2124.1,
+    1048.0,
+    2194.1,
+    1151.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "C3",
+   "id": "08-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2194.1,
+    1048.0,
+    2264.1,
+    1151.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "C4",
+   "id": "08-C4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2264.1,
+    1048.0,
+    2334.1,
+    1151.0
+   ]
+  },
+  {
+   "lot": 8,
+   "space": "D1",
+   "id": "08-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2334.1,
+    1048.0,
+    2404.1,
+    1151.0
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "A1",
+   "id": "09-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1495.5,
+    943.5,
+    1565.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "A2",
+   "id": "09-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1565.5,
+    943.5,
+    1635.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "A3",
+   "id": "09-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1635.5,
+    943.5,
+    1705.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "A4",
+   "id": "09-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1705.5,
+    943.5,
+    1775.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "B1",
+   "id": "09-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1775.5,
+    943.5,
+    1845.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "B2",
+   "id": "09-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1845.5,
+    943.5,
+    1915.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "B3",
+   "id": "09-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1915.5,
+    943.5,
+    1985.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "B4",
+   "id": "09-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1985.5,
+    943.5,
+    2055.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "C1",
+   "id": "09-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1495.5,
+    1046.5,
+    1565.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "C2",
+   "id": "09-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1565.5,
+    1046.5,
+    1635.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "C3",
+   "id": "09-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1635.5,
+    1046.5,
+    1705.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "C4",
+   "id": "09-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1705.5,
+    1046.5,
+    1775.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "D1",
+   "id": "09-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1775.5,
+    1046.5,
+    1845.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "D2",
+   "id": "09-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1845.5,
+    1046.5,
+    1915.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "D3",
+   "id": "09-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1915.5,
+    1046.5,
+    1985.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 9,
+   "space": "D4",
+   "id": "09-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1985.5,
+    1046.5,
+    2055.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "A1",
+   "id": "10-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    933.4,
+    944.3,
+    1003.4,
+    1047.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "A2",
+   "id": "10-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1003.4,
+    944.3,
+    1073.4,
+    1047.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "A3",
+   "id": "10-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1073.4,
+    944.3,
+    1143.4,
+    1047.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "A4",
+   "id": "10-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1143.4,
+    944.3,
+    1213.4,
+    1047.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "B1",
+   "id": "10-B1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1213.4,
+    944.3,
+    1283.4,
+    1047.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "B2",
+   "id": "10-B2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1283.4,
+    944.3,
+    1353.4,
+    1047.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "B3",
+   "id": "10-B3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1353.4,
+    944.3,
+    1423.4,
+    1047.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "B4",
+   "id": "10-B4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1423.4,
+    944.3,
+    1493.4,
+    1047.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "C1",
+   "id": "10-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    933.4,
+    1047.3,
+    1003.4,
+    1150.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "C2",
+   "id": "10-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1003.4,
+    1047.3,
+    1073.4,
+    1150.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "C3",
+   "id": "10-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1073.4,
+    1047.3,
+    1143.4,
+    1150.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "C4",
+   "id": "10-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1143.4,
+    1047.3,
+    1213.4,
+    1150.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "D1",
+   "id": "10-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1213.4,
+    1047.3,
+    1283.4,
+    1150.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "D2",
+   "id": "10-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1283.4,
+    1047.3,
+    1353.4,
+    1150.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "D3",
+   "id": "10-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1353.4,
+    1047.3,
+    1423.4,
+    1150.3
+   ]
+  },
+  {
+   "lot": 10,
+   "space": "D4",
+   "id": "10-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1423.4,
+    1047.3,
+    1493.4,
+    1150.3
+   ]
+  },
+  {
+   "lot": 11,
+   "space": "D1",
+   "id": "11-D1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    654.0,
+    1048.9,
+    724.0,
+    1151.9
+   ]
+  },
+  {
+   "lot": 11,
+   "space": "D2",
+   "id": "11-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    724.0,
+    1048.9,
+    794.0,
+    1151.9
+   ]
+  },
+  {
+   "lot": 11,
+   "space": "D3",
+   "id": "11-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    794.0,
+    1048.9,
+    864.0,
+    1151.9
+   ]
+  },
+  {
+   "lot": 11,
+   "space": "D4",
+   "id": "11-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    864.0,
+    1048.9,
+    934.0,
+    1151.9
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "A1",
+   "id": "12-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2615.6,
+    1151.3,
+    2685.6,
+    1254.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "A2",
+   "id": "12-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2685.6,
+    1151.3,
+    2755.6,
+    1254.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "A3",
+   "id": "12-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2755.6,
+    1151.3,
+    2825.6,
+    1254.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "A4",
+   "id": "12-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2825.6,
+    1151.3,
+    2895.6,
+    1254.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "B1",
+   "id": "12-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2895.6,
+    1151.3,
+    2965.6,
+    1254.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "B2",
+   "id": "12-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2965.6,
+    1151.3,
+    3035.6,
+    1254.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "B3",
+   "id": "12-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3035.6,
+    1151.3,
+    3105.6,
+    1254.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "B4",
+   "id": "12-B4",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3105.6,
+    1151.3,
+    3175.6,
+    1254.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "C1",
+   "id": "12-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2615.6,
+    1254.3,
+    2685.6,
+    1357.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "C2",
+   "id": "12-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2685.6,
+    1254.3,
+    2755.6,
+    1357.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "C3",
+   "id": "12-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2755.6,
+    1254.3,
+    2825.6,
+    1357.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "C4",
+   "id": "12-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2825.6,
+    1254.3,
+    2895.6,
+    1357.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "D1",
+   "id": "12-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2895.6,
+    1254.3,
+    2965.6,
+    1357.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "D2",
+   "id": "12-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2965.6,
+    1254.3,
+    3035.6,
+    1357.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "D3",
+   "id": "12-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3035.6,
+    1254.3,
+    3105.6,
+    1357.3
+   ]
+  },
+  {
+   "lot": 12,
+   "space": "D4",
+   "id": "12-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3105.6,
+    1254.3,
+    3175.6,
+    1357.3
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "A1",
+   "id": "13-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2055.0,
+    1150.4,
+    2125.0,
+    1253.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "A2",
+   "id": "13-A2",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2125.0,
+    1150.4,
+    2195.0,
+    1253.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "A3",
+   "id": "13-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2195.0,
+    1150.4,
+    2265.0,
+    1253.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "A4",
+   "id": "13-A4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2265.0,
+    1150.4,
+    2335.0,
+    1253.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "B1",
+   "id": "13-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2335.0,
+    1150.4,
+    2405.0,
+    1253.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "C1",
+   "id": "13-C1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2055.0,
+    1253.4,
+    2125.0,
+    1356.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "C2",
+   "id": "13-C2",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2125.0,
+    1253.4,
+    2195.0,
+    1356.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "C3",
+   "id": "13-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2195.0,
+    1253.4,
+    2265.0,
+    1356.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "C4",
+   "id": "13-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2265.0,
+    1253.4,
+    2335.0,
+    1356.4
+   ]
+  },
+  {
+   "lot": 13,
+   "space": "D1",
+   "id": "13-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2335.0,
+    1253.4,
+    2405.0,
+    1356.4
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "A1",
+   "id": "14-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1494.6,
+    1151.2,
+    1564.6,
+    1254.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "A2",
+   "id": "14-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1564.6,
+    1151.2,
+    1634.6,
+    1254.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "A3",
+   "id": "14-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1634.6,
+    1151.2,
+    1704.6,
+    1254.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "A4",
+   "id": "14-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1704.6,
+    1151.2,
+    1774.6,
+    1254.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "B1",
+   "id": "14-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1774.6,
+    1151.2,
+    1844.6,
+    1254.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "B2",
+   "id": "14-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1844.6,
+    1151.2,
+    1914.6,
+    1254.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "B3",
+   "id": "14-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1914.6,
+    1151.2,
+    1984.6,
+    1254.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "B4",
+   "id": "14-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1984.6,
+    1151.2,
+    2054.6,
+    1254.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "C1",
+   "id": "14-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1494.6,
+    1254.2,
+    1564.6,
+    1357.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "C2",
+   "id": "14-C2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1564.6,
+    1254.2,
+    1634.6,
+    1357.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "C3",
+   "id": "14-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1634.6,
+    1254.2,
+    1704.6,
+    1357.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "C4",
+   "id": "14-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1704.6,
+    1254.2,
+    1774.6,
+    1357.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "D1",
+   "id": "14-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1774.6,
+    1254.2,
+    1844.6,
+    1357.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "D2",
+   "id": "14-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1844.6,
+    1254.2,
+    1914.6,
+    1357.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "D3",
+   "id": "14-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1914.6,
+    1254.2,
+    1984.6,
+    1357.2
+   ]
+  },
+  {
+   "lot": 14,
+   "space": "D4",
+   "id": "14-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1984.6,
+    1254.2,
+    2054.6,
+    1357.2
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "A1",
+   "id": "15-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    933.8,
+    1151.3,
+    1003.8,
+    1254.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "A2",
+   "id": "15-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1003.8,
+    1151.3,
+    1073.8,
+    1254.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "A3",
+   "id": "15-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1073.8,
+    1151.3,
+    1143.8,
+    1254.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "A4",
+   "id": "15-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1143.8,
+    1151.3,
+    1213.8,
+    1254.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "B1",
+   "id": "15-B1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1213.8,
+    1151.3,
+    1283.8,
+    1254.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "B2",
+   "id": "15-B2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1283.8,
+    1151.3,
+    1353.8,
+    1254.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "B3",
+   "id": "15-B3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1353.8,
+    1151.3,
+    1423.8,
+    1254.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "B4",
+   "id": "15-B4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1423.8,
+    1151.3,
+    1493.8,
+    1254.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "C1",
+   "id": "15-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    933.8,
+    1254.3,
+    1003.8,
+    1357.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "C2",
+   "id": "15-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1003.8,
+    1254.3,
+    1073.8,
+    1357.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "C3",
+   "id": "15-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1073.8,
+    1254.3,
+    1143.8,
+    1357.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "C4",
+   "id": "15-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1143.8,
+    1254.3,
+    1213.8,
+    1357.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "D1",
+   "id": "15-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1213.8,
+    1254.3,
+    1283.8,
+    1357.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "D2",
+   "id": "15-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1283.8,
+    1254.3,
+    1353.8,
+    1357.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "D3",
+   "id": "15-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1353.8,
+    1254.3,
+    1423.8,
+    1357.3
+   ]
+  },
+  {
+   "lot": 15,
+   "space": "D4",
+   "id": "15-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1423.8,
+    1254.3,
+    1493.8,
+    1357.3
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "A3",
+   "id": "16-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    512.8,
+    1151.2,
+    582.8,
+    1254.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "A4",
+   "id": "16-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    582.8,
+    1151.2,
+    652.8,
+    1254.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "B1",
+   "id": "16-B1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    652.8,
+    1151.2,
+    722.8,
+    1254.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "B2",
+   "id": "16-B2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    722.8,
+    1151.2,
+    792.8,
+    1254.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "B3",
+   "id": "16-B3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    792.8,
+    1151.2,
+    862.8,
+    1254.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "B4",
+   "id": "16-B4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    862.8,
+    1151.2,
+    932.8,
+    1254.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "C1",
+   "id": "16-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    372.8,
+    1254.2,
+    442.8,
+    1357.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "C2",
+   "id": "16-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    442.8,
+    1254.2,
+    512.8,
+    1357.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "C3",
+   "id": "16-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    512.8,
+    1254.2,
+    582.8,
+    1357.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "C4",
+   "id": "16-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    582.8,
+    1254.2,
+    652.8,
+    1357.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "D1",
+   "id": "16-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    652.8,
+    1254.2,
+    722.8,
+    1357.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "D2",
+   "id": "16-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    722.8,
+    1254.2,
+    792.8,
+    1357.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "D3",
+   "id": "16-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    792.8,
+    1254.2,
+    862.8,
+    1357.2
+   ]
+  },
+  {
+   "lot": 16,
+   "space": "D4",
+   "id": "16-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    862.8,
+    1254.2,
+    932.8,
+    1357.2
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "A1",
+   "id": "17-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2615.6,
+    1358.0,
+    2685.6,
+    1461.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "A2",
+   "id": "17-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2685.6,
+    1358.0,
+    2755.6,
+    1461.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "A3",
+   "id": "17-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2755.6,
+    1358.0,
+    2825.6,
+    1461.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "A4",
+   "id": "17-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2825.6,
+    1358.0,
+    2895.6,
+    1461.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "B1",
+   "id": "17-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2895.6,
+    1358.0,
+    2965.6,
+    1461.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "B2",
+   "id": "17-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2965.6,
+    1358.0,
+    3035.6,
+    1461.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "B3",
+   "id": "17-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3035.6,
+    1358.0,
+    3105.6,
+    1461.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "B4",
+   "id": "17-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3105.6,
+    1358.0,
+    3175.6,
+    1461.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "C1",
+   "id": "17-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2615.6,
+    1461.0,
+    2685.6,
+    1564.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "C2",
+   "id": "17-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2685.6,
+    1461.0,
+    2755.6,
+    1564.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "C3",
+   "id": "17-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2755.6,
+    1461.0,
+    2825.6,
+    1564.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "C4",
+   "id": "17-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2825.6,
+    1461.0,
+    2895.6,
+    1564.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "D1",
+   "id": "17-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2895.6,
+    1461.0,
+    2965.6,
+    1564.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "D2",
+   "id": "17-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2965.6,
+    1461.0,
+    3035.6,
+    1564.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "D3",
+   "id": "17-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3035.6,
+    1461.0,
+    3105.6,
+    1564.0
+   ]
+  },
+  {
+   "lot": 17,
+   "space": "D4",
+   "id": "17-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3105.6,
+    1461.0,
+    3175.6,
+    1564.0
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "A1",
+   "id": "18-A1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2055.8,
+    1356.5,
+    2125.8,
+    1459.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "A2",
+   "id": "18-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2125.8,
+    1356.5,
+    2195.8,
+    1459.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "A3",
+   "id": "18-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2195.8,
+    1356.5,
+    2265.8,
+    1459.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "A4",
+   "id": "18-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2265.8,
+    1356.5,
+    2335.8,
+    1459.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "B1",
+   "id": "18-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2335.8,
+    1356.5,
+    2405.8,
+    1459.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "C1",
+   "id": "18-C1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2055.8,
+    1459.5,
+    2125.8,
+    1562.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "C2",
+   "id": "18-C2",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2125.8,
+    1459.5,
+    2195.8,
+    1562.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "C3",
+   "id": "18-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2195.8,
+    1459.5,
+    2265.8,
+    1562.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "C4",
+   "id": "18-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2265.8,
+    1459.5,
+    2335.8,
+    1562.5
+   ]
+  },
+  {
+   "lot": 18,
+   "space": "D1",
+   "id": "18-D1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2335.8,
+    1459.5,
+    2405.8,
+    1562.5
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "A1",
+   "id": "19-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1494.3,
+    1357.3,
+    1564.3,
+    1460.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "A2",
+   "id": "19-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1564.3,
+    1357.3,
+    1634.3,
+    1460.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "A3",
+   "id": "19-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1634.3,
+    1357.3,
+    1704.3,
+    1460.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "A4",
+   "id": "19-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1704.3,
+    1357.3,
+    1774.3,
+    1460.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "B1",
+   "id": "19-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1774.3,
+    1357.3,
+    1844.3,
+    1460.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "B2",
+   "id": "19-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1844.3,
+    1357.3,
+    1914.3,
+    1460.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "B3",
+   "id": "19-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1914.3,
+    1357.3,
+    1984.3,
+    1460.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "B4",
+   "id": "19-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1984.3,
+    1357.3,
+    2054.3,
+    1460.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "C1",
+   "id": "19-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1494.3,
+    1460.3,
+    1564.3,
+    1563.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "C2",
+   "id": "19-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1564.3,
+    1460.3,
+    1634.3,
+    1563.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "C3",
+   "id": "19-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1634.3,
+    1460.3,
+    1704.3,
+    1563.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "C4",
+   "id": "19-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1704.3,
+    1460.3,
+    1774.3,
+    1563.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "D1",
+   "id": "19-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1774.3,
+    1460.3,
+    1844.3,
+    1563.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "D2",
+   "id": "19-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1844.3,
+    1460.3,
+    1914.3,
+    1563.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "D3",
+   "id": "19-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1914.3,
+    1460.3,
+    1984.3,
+    1563.3
+   ]
+  },
+  {
+   "lot": 19,
+   "space": "D4",
+   "id": "19-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1984.3,
+    1460.3,
+    2054.3,
+    1563.3
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "A1",
+   "id": "20-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    932.2,
+    1356.5,
+    1002.2,
+    1459.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "A2",
+   "id": "20-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1002.2,
+    1356.5,
+    1072.2,
+    1459.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "A3",
+   "id": "20-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1072.2,
+    1356.5,
+    1142.2,
+    1459.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "A4",
+   "id": "20-A4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1142.2,
+    1356.5,
+    1212.2,
+    1459.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "B1",
+   "id": "20-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1212.2,
+    1356.5,
+    1282.2,
+    1459.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "B2",
+   "id": "20-B2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1282.2,
+    1356.5,
+    1352.2,
+    1459.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "B3",
+   "id": "20-B3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1352.2,
+    1356.5,
+    1422.2,
+    1459.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "B4",
+   "id": "20-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1422.2,
+    1356.5,
+    1492.2,
+    1459.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "C1",
+   "id": "20-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    932.2,
+    1459.5,
+    1002.2,
+    1562.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "C2",
+   "id": "20-C2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1002.2,
+    1459.5,
+    1072.2,
+    1562.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "C3",
+   "id": "20-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1072.2,
+    1459.5,
+    1142.2,
+    1562.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "C4",
+   "id": "20-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1142.2,
+    1459.5,
+    1212.2,
+    1562.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "D1",
+   "id": "20-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1212.2,
+    1459.5,
+    1282.2,
+    1562.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "D2",
+   "id": "20-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1282.2,
+    1459.5,
+    1352.2,
+    1562.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "D3",
+   "id": "20-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1352.2,
+    1459.5,
+    1422.2,
+    1562.5
+   ]
+  },
+  {
+   "lot": 20,
+   "space": "D4",
+   "id": "20-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1422.2,
+    1459.5,
+    1492.2,
+    1562.5
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "A1",
+   "id": "21-A1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    373.5,
+    1356.4,
+    443.5,
+    1459.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "A2",
+   "id": "21-A2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    443.5,
+    1356.4,
+    513.5,
+    1459.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "A3",
+   "id": "21-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    513.5,
+    1356.4,
+    583.5,
+    1459.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "A4",
+   "id": "21-A4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    583.5,
+    1356.4,
+    653.5,
+    1459.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "B1",
+   "id": "21-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    653.5,
+    1356.4,
+    723.5,
+    1459.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "B2",
+   "id": "21-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    723.5,
+    1356.4,
+    793.5,
+    1459.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "B3",
+   "id": "21-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    793.5,
+    1356.4,
+    863.5,
+    1459.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "B4",
+   "id": "21-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    863.5,
+    1356.4,
+    933.5,
+    1459.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "C1",
+   "id": "21-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    373.5,
+    1459.4,
+    443.5,
+    1562.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "C2",
+   "id": "21-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    443.5,
+    1459.4,
+    513.5,
+    1562.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "C3",
+   "id": "21-C3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    513.5,
+    1459.4,
+    583.5,
+    1562.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "C4",
+   "id": "21-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    583.5,
+    1459.4,
+    653.5,
+    1562.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "D1",
+   "id": "21-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    653.5,
+    1459.4,
+    723.5,
+    1562.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "D2",
+   "id": "21-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    723.5,
+    1459.4,
+    793.5,
+    1562.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "D3",
+   "id": "21-D3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    793.5,
+    1459.4,
+    863.5,
+    1562.4
+   ]
+  },
+  {
+   "lot": 21,
+   "space": "D4",
+   "id": "21-D4",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    863.5,
+    1459.4,
+    933.5,
+    1562.4
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "A1",
+   "id": "22-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2615.7,
+    1563.3,
+    2685.7,
+    1666.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "A2",
+   "id": "22-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2685.7,
+    1563.3,
+    2755.7,
+    1666.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "A3",
+   "id": "22-A3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2755.7,
+    1563.3,
+    2825.7,
+    1666.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "A4",
+   "id": "22-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2825.7,
+    1563.3,
+    2895.7,
+    1666.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "B1",
+   "id": "22-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2895.7,
+    1563.3,
+    2965.7,
+    1666.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "B2",
+   "id": "22-B2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2965.7,
+    1563.3,
+    3035.7,
+    1666.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "B3",
+   "id": "22-B3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3035.7,
+    1563.3,
+    3105.7,
+    1666.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "B4",
+   "id": "22-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3105.7,
+    1563.3,
+    3175.7,
+    1666.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "C1",
+   "id": "22-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2615.7,
+    1666.3,
+    2685.7,
+    1769.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "C2",
+   "id": "22-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2685.7,
+    1666.3,
+    2755.7,
+    1769.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "C3",
+   "id": "22-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2755.7,
+    1666.3,
+    2825.7,
+    1769.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "C4",
+   "id": "22-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2825.7,
+    1666.3,
+    2895.7,
+    1769.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "D1",
+   "id": "22-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2895.7,
+    1666.3,
+    2965.7,
+    1769.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "D2",
+   "id": "22-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2965.7,
+    1666.3,
+    3035.7,
+    1769.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "D3",
+   "id": "22-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3035.7,
+    1666.3,
+    3105.7,
+    1769.3
+   ]
+  },
+  {
+   "lot": 22,
+   "space": "D4",
+   "id": "22-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3105.7,
+    1666.3,
+    3175.7,
+    1769.3
+   ]
+  },
+  {
+   "lot": 23,
+   "space": "A1",
+   "id": "23-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2055.0,
+    1562.6,
+    2125.0,
+    1665.6
+   ]
+  },
+  {
+   "lot": 23,
+   "space": "A2",
+   "id": "23-A2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2125.0,
+    1562.6,
+    2195.0,
+    1665.6
+   ]
+  },
+  {
+   "lot": 23,
+   "space": "A3",
+   "id": "23-A3",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2195.0,
+    1562.6,
+    2265.0,
+    1665.6
+   ]
+  },
+  {
+   "lot": 23,
+   "space": "A4",
+   "id": "23-A4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2265.0,
+    1562.6,
+    2335.0,
+    1665.6
+   ]
+  },
+  {
+   "lot": 23,
+   "space": "B1",
+   "id": "23-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2335.0,
+    1562.6,
+    2405.0,
+    1665.6
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "A1",
+   "id": "24-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1494.0,
+    1561.8,
+    1564.0,
+    1664.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "A2",
+   "id": "24-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1564.0,
+    1561.8,
+    1634.0,
+    1664.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "A3",
+   "id": "24-A3",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1634.0,
+    1561.8,
+    1704.0,
+    1664.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "A4",
+   "id": "24-A4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1704.0,
+    1561.8,
+    1774.0,
+    1664.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "B1",
+   "id": "24-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1774.0,
+    1561.8,
+    1844.0,
+    1664.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "B2",
+   "id": "24-B2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1844.0,
+    1561.8,
+    1914.0,
+    1664.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "B3",
+   "id": "24-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1914.0,
+    1561.8,
+    1984.0,
+    1664.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "B4",
+   "id": "24-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1984.0,
+    1561.8,
+    2054.0,
+    1664.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "C1",
+   "id": "24-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1494.0,
+    1664.8,
+    1564.0,
+    1767.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "C2",
+   "id": "24-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1564.0,
+    1664.8,
+    1634.0,
+    1767.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "C3",
+   "id": "24-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1634.0,
+    1664.8,
+    1704.0,
+    1767.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "C4",
+   "id": "24-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1704.0,
+    1664.8,
+    1774.0,
+    1767.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "D1",
+   "id": "24-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1774.0,
+    1664.8,
+    1844.0,
+    1767.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "D2",
+   "id": "24-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1844.0,
+    1664.8,
+    1914.0,
+    1767.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "D3",
+   "id": "24-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1914.0,
+    1664.8,
+    1984.0,
+    1767.8
+   ]
+  },
+  {
+   "lot": 24,
+   "space": "D4",
+   "id": "24-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1984.0,
+    1664.8,
+    2054.0,
+    1767.8
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "A4",
+   "id": "25-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1143.7,
+    1563.5,
+    1213.7,
+    1666.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "B1",
+   "id": "25-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1213.7,
+    1563.5,
+    1283.7,
+    1666.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "B2",
+   "id": "25-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1283.7,
+    1563.5,
+    1353.7,
+    1666.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "B3",
+   "id": "25-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1353.7,
+    1563.5,
+    1423.7,
+    1666.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "B4",
+   "id": "25-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1423.7,
+    1563.5,
+    1493.7,
+    1666.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "C1",
+   "id": "25-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    933.7,
+    1666.5,
+    1003.7,
+    1769.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "C2",
+   "id": "25-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1003.7,
+    1666.5,
+    1073.7,
+    1769.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "C3",
+   "id": "25-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1073.7,
+    1666.5,
+    1143.7,
+    1769.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "C4",
+   "id": "25-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1143.7,
+    1666.5,
+    1213.7,
+    1769.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "D1",
+   "id": "25-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1213.7,
+    1666.5,
+    1283.7,
+    1769.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "D2",
+   "id": "25-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1283.7,
+    1666.5,
+    1353.7,
+    1769.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "D3",
+   "id": "25-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1353.7,
+    1666.5,
+    1423.7,
+    1769.5
+   ]
+  },
+  {
+   "lot": 25,
+   "space": "D4",
+   "id": "25-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1423.7,
+    1666.5,
+    1493.7,
+    1769.5
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "A1",
+   "id": "26-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    373.8,
+    1563.6,
+    443.8,
+    1666.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "A2",
+   "id": "26-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    443.8,
+    1563.6,
+    513.8,
+    1666.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "A3",
+   "id": "26-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    513.8,
+    1563.6,
+    583.8,
+    1666.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "A4",
+   "id": "26-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    583.8,
+    1563.6,
+    653.8,
+    1666.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "B1",
+   "id": "26-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    653.8,
+    1563.6,
+    723.8,
+    1666.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "B2",
+   "id": "26-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    723.8,
+    1563.6,
+    793.8,
+    1666.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "B3",
+   "id": "26-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    793.8,
+    1563.6,
+    863.8,
+    1666.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "B4",
+   "id": "26-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    863.8,
+    1563.6,
+    933.8,
+    1666.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "C1",
+   "id": "26-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    373.8,
+    1666.6,
+    443.8,
+    1769.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "C2",
+   "id": "26-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    443.8,
+    1666.6,
+    513.8,
+    1769.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "C3",
+   "id": "26-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    513.8,
+    1666.6,
+    583.8,
+    1769.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "C4",
+   "id": "26-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    583.8,
+    1666.6,
+    653.8,
+    1769.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "D1",
+   "id": "26-D1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    653.8,
+    1666.6,
+    723.8,
+    1769.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "D2",
+   "id": "26-D2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    723.8,
+    1666.6,
+    793.8,
+    1769.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "D3",
+   "id": "26-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    793.8,
+    1666.6,
+    863.8,
+    1769.6
+   ]
+  },
+  {
+   "lot": 26,
+   "space": "D4",
+   "id": "26-D4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    863.8,
+    1666.6,
+    933.8,
+    1769.6
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "A1",
+   "id": "27-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2614.7,
+    1890.2,
+    2684.7,
+    1993.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "A2",
+   "id": "27-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2684.7,
+    1890.2,
+    2754.7,
+    1993.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "A3",
+   "id": "27-A3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2754.7,
+    1890.2,
+    2824.7,
+    1993.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "A4",
+   "id": "27-A4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2824.7,
+    1890.2,
+    2894.7,
+    1993.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "B1",
+   "id": "27-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2894.7,
+    1890.2,
+    2964.7,
+    1993.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "B2",
+   "id": "27-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2964.7,
+    1890.2,
+    3034.7,
+    1993.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "B3",
+   "id": "27-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3034.7,
+    1890.2,
+    3104.7,
+    1993.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "B4",
+   "id": "27-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3104.7,
+    1890.2,
+    3174.7,
+    1993.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "C1",
+   "id": "27-C1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2614.7,
+    1993.2,
+    2684.7,
+    2096.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "C2",
+   "id": "27-C2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2684.7,
+    1993.2,
+    2754.7,
+    2096.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "C3",
+   "id": "27-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2754.7,
+    1993.2,
+    2824.7,
+    2096.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "C4",
+   "id": "27-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2824.7,
+    1993.2,
+    2894.7,
+    2096.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "D1",
+   "id": "27-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2894.7,
+    1993.2,
+    2964.7,
+    2096.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "D2",
+   "id": "27-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2964.7,
+    1993.2,
+    3034.7,
+    2096.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "D3",
+   "id": "27-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3034.7,
+    1993.2,
+    3104.7,
+    2096.2
+   ]
+  },
+  {
+   "lot": 27,
+   "space": "D4",
+   "id": "27-D4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3104.7,
+    1993.2,
+    3174.7,
+    2096.2
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "A1",
+   "id": "28-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2054.4,
+    1890.1,
+    2124.4,
+    1993.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "A2",
+   "id": "28-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2124.4,
+    1890.1,
+    2194.4,
+    1993.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "A3",
+   "id": "28-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2194.4,
+    1890.1,
+    2264.4,
+    1993.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "A4",
+   "id": "28-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2264.4,
+    1890.1,
+    2334.4,
+    1993.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "B1",
+   "id": "28-B1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2334.4,
+    1890.1,
+    2404.4,
+    1993.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "B2",
+   "id": "28-B2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2404.4,
+    1890.1,
+    2474.4,
+    1993.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "B3",
+   "id": "28-B3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2474.4,
+    1890.1,
+    2544.4,
+    1993.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "B4",
+   "id": "28-B4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2544.4,
+    1890.1,
+    2614.4,
+    1993.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "C1",
+   "id": "28-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2054.4,
+    1993.1,
+    2124.4,
+    2096.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "C2",
+   "id": "28-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2124.4,
+    1993.1,
+    2194.4,
+    2096.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "C3",
+   "id": "28-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2194.4,
+    1993.1,
+    2264.4,
+    2096.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "C4",
+   "id": "28-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2264.4,
+    1993.1,
+    2334.4,
+    2096.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "D1",
+   "id": "28-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2334.4,
+    1993.1,
+    2404.4,
+    2096.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "D2",
+   "id": "28-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2404.4,
+    1993.1,
+    2474.4,
+    2096.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "D3",
+   "id": "28-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2474.4,
+    1993.1,
+    2544.4,
+    2096.1
+   ]
+  },
+  {
+   "lot": 28,
+   "space": "D4",
+   "id": "28-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2544.4,
+    1993.1,
+    2614.4,
+    2096.1
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "A3",
+   "id": "29-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1635.0,
+    1889.4,
+    1705.0,
+    1992.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "A4",
+   "id": "29-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1705.0,
+    1889.4,
+    1775.0,
+    1992.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "B1",
+   "id": "29-B1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1775.0,
+    1889.4,
+    1845.0,
+    1992.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "B2",
+   "id": "29-B2",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1845.0,
+    1889.4,
+    1915.0,
+    1992.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "B3",
+   "id": "29-B3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1915.0,
+    1889.4,
+    1985.0,
+    1992.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "B4",
+   "id": "29-B4",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1985.0,
+    1889.4,
+    2055.0,
+    1992.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "C1",
+   "id": "29-C1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1495.0,
+    1992.4,
+    1565.0,
+    2095.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "C2",
+   "id": "29-C2",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1565.0,
+    1992.4,
+    1635.0,
+    2095.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "C3",
+   "id": "29-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1635.0,
+    1992.4,
+    1705.0,
+    2095.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "C4",
+   "id": "29-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1705.0,
+    1992.4,
+    1775.0,
+    2095.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "D1",
+   "id": "29-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1775.0,
+    1992.4,
+    1845.0,
+    2095.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "D2",
+   "id": "29-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1845.0,
+    1992.4,
+    1915.0,
+    2095.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "D3",
+   "id": "29-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1915.0,
+    1992.4,
+    1985.0,
+    2095.4
+   ]
+  },
+  {
+   "lot": 29,
+   "space": "D4",
+   "id": "29-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1985.0,
+    1992.4,
+    2055.0,
+    2095.4
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "A1",
+   "id": "30-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    933.8,
+    1893.1,
+    1003.8,
+    1996.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "A2",
+   "id": "30-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1003.8,
+    1893.1,
+    1073.8,
+    1996.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "A3",
+   "id": "30-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1073.8,
+    1893.1,
+    1143.8,
+    1996.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "A4",
+   "id": "30-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1143.8,
+    1893.1,
+    1213.8,
+    1996.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "B1",
+   "id": "30-B1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    1213.8,
+    1893.1,
+    1283.8,
+    1996.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "B2",
+   "id": "30-B2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1283.8,
+    1893.1,
+    1353.8,
+    1996.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "B3",
+   "id": "30-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1353.8,
+    1893.1,
+    1423.8,
+    1996.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "B4",
+   "id": "30-B4",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1423.8,
+    1893.1,
+    1493.8,
+    1996.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "C1",
+   "id": "30-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    933.8,
+    1996.1,
+    1003.8,
+    2099.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "C2",
+   "id": "30-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1003.8,
+    1996.1,
+    1073.8,
+    2099.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "C3",
+   "id": "30-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1073.8,
+    1996.1,
+    1143.8,
+    2099.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "C4",
+   "id": "30-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1143.8,
+    1996.1,
+    1213.8,
+    2099.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "D1",
+   "id": "30-D1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    1213.8,
+    1996.1,
+    1283.8,
+    2099.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "D2",
+   "id": "30-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1283.8,
+    1996.1,
+    1353.8,
+    2099.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "D3",
+   "id": "30-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1353.8,
+    1996.1,
+    1423.8,
+    2099.1
+   ]
+  },
+  {
+   "lot": 30,
+   "space": "D4",
+   "id": "30-D4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1423.8,
+    1996.1,
+    1493.8,
+    2099.1
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "A1",
+   "id": "31-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    373.7,
+    1890.4,
+    443.7,
+    1993.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "A2",
+   "id": "31-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    443.7,
+    1890.4,
+    513.7,
+    1993.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "A3",
+   "id": "31-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    513.7,
+    1890.4,
+    583.7,
+    1993.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "A4",
+   "id": "31-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    583.7,
+    1890.4,
+    653.7,
+    1993.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "B1",
+   "id": "31-B1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    653.7,
+    1890.4,
+    723.7,
+    1993.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "B2",
+   "id": "31-B2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    723.7,
+    1890.4,
+    793.7,
+    1993.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "B3",
+   "id": "31-B3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    793.7,
+    1890.4,
+    863.7,
+    1993.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "B4",
+   "id": "31-B4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    863.7,
+    1890.4,
+    933.7,
+    1993.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "C1",
+   "id": "31-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    373.7,
+    1993.4,
+    443.7,
+    2096.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "C2",
+   "id": "31-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    443.7,
+    1993.4,
+    513.7,
+    2096.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "C3",
+   "id": "31-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    513.7,
+    1993.4,
+    583.7,
+    2096.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "C4",
+   "id": "31-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    583.7,
+    1993.4,
+    653.7,
+    2096.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "D1",
+   "id": "31-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    653.7,
+    1993.4,
+    723.7,
+    2096.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "D2",
+   "id": "31-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    723.7,
+    1993.4,
+    793.7,
+    2096.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "D3",
+   "id": "31-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    793.7,
+    1993.4,
+    863.7,
+    2096.4
+   ]
+  },
+  {
+   "lot": 31,
+   "space": "D4",
+   "id": "31-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    863.7,
+    1993.4,
+    933.7,
+    2096.4
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "A1",
+   "id": "32-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2617.6,
+    2095.6,
+    2687.6,
+    2198.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "A2",
+   "id": "32-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2687.6,
+    2095.6,
+    2757.6,
+    2198.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "A3",
+   "id": "32-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2757.6,
+    2095.6,
+    2827.6,
+    2198.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "A4",
+   "id": "32-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2827.6,
+    2095.6,
+    2897.6,
+    2198.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "B1",
+   "id": "32-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2897.6,
+    2095.6,
+    2967.6,
+    2198.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "B2",
+   "id": "32-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2967.6,
+    2095.6,
+    3037.6,
+    2198.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "B3",
+   "id": "32-B3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3037.6,
+    2095.6,
+    3107.6,
+    2198.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "B4",
+   "id": "32-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3107.6,
+    2095.6,
+    3177.6,
+    2198.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "C1",
+   "id": "32-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2617.6,
+    2198.6,
+    2687.6,
+    2301.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "C2",
+   "id": "32-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2687.6,
+    2198.6,
+    2757.6,
+    2301.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "C3",
+   "id": "32-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2757.6,
+    2198.6,
+    2827.6,
+    2301.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "C4",
+   "id": "32-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    2827.6,
+    2198.6,
+    2897.6,
+    2301.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "D1",
+   "id": "32-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2897.6,
+    2198.6,
+    2967.6,
+    2301.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "D2",
+   "id": "32-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2967.6,
+    2198.6,
+    3037.6,
+    2301.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "D3",
+   "id": "32-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3037.6,
+    2198.6,
+    3107.6,
+    2301.6
+   ]
+  },
+  {
+   "lot": 32,
+   "space": "D4",
+   "id": "32-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3107.6,
+    2198.6,
+    3177.6,
+    2301.6
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "A1",
+   "id": "33-A1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2055.1,
+    2096.3,
+    2125.1,
+    2199.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "A2",
+   "id": "33-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2125.1,
+    2096.3,
+    2195.1,
+    2199.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "A3",
+   "id": "33-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2195.1,
+    2096.3,
+    2265.1,
+    2199.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "A4",
+   "id": "33-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2265.1,
+    2096.3,
+    2335.1,
+    2199.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "B1",
+   "id": "33-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2335.1,
+    2096.3,
+    2405.1,
+    2199.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "B2",
+   "id": "33-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2405.1,
+    2096.3,
+    2475.1,
+    2199.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "B3",
+   "id": "33-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2475.1,
+    2096.3,
+    2545.1,
+    2199.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "B4",
+   "id": "33-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2545.1,
+    2096.3,
+    2615.1,
+    2199.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "C1",
+   "id": "33-C1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    2055.1,
+    2199.3,
+    2125.1,
+    2302.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "C2",
+   "id": "33-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2125.1,
+    2199.3,
+    2195.1,
+    2302.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "C3",
+   "id": "33-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2195.1,
+    2199.3,
+    2265.1,
+    2302.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "C4",
+   "id": "33-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2265.1,
+    2199.3,
+    2335.1,
+    2302.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "D2",
+   "id": "33-D2",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    2405.1,
+    2199.3,
+    2475.1,
+    2302.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "D3",
+   "id": "33-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2475.1,
+    2199.3,
+    2545.1,
+    2302.3
+   ]
+  },
+  {
+   "lot": 33,
+   "space": "D4",
+   "id": "33-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    2545.1,
+    2199.3,
+    2615.1,
+    2302.3
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "A1",
+   "id": "34-A1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1494.3,
+    2098.4,
+    1564.3,
+    2201.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "A2",
+   "id": "34-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1564.3,
+    2098.4,
+    1634.3,
+    2201.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "A3",
+   "id": "34-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1634.3,
+    2098.4,
+    1704.3,
+    2201.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "A4",
+   "id": "34-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1704.3,
+    2098.4,
+    1774.3,
+    2201.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "B1",
+   "id": "34-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1774.3,
+    2098.4,
+    1844.3,
+    2201.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "B2",
+   "id": "34-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1844.3,
+    2098.4,
+    1914.3,
+    2201.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "B3",
+   "id": "34-B3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1914.3,
+    2098.4,
+    1984.3,
+    2201.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "B4",
+   "id": "34-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1984.3,
+    2098.4,
+    2054.3,
+    2201.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "C1",
+   "id": "34-C1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1494.3,
+    2201.4,
+    1564.3,
+    2304.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "C2",
+   "id": "34-C2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1564.3,
+    2201.4,
+    1634.3,
+    2304.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "C3",
+   "id": "34-C3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1634.3,
+    2201.4,
+    1704.3,
+    2304.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "C4",
+   "id": "34-C4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1704.3,
+    2201.4,
+    1774.3,
+    2304.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "D1",
+   "id": "34-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1774.3,
+    2201.4,
+    1844.3,
+    2304.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "D2",
+   "id": "34-D2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1844.3,
+    2201.4,
+    1914.3,
+    2304.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "D3",
+   "id": "34-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1914.3,
+    2201.4,
+    1984.3,
+    2304.4
+   ]
+  },
+  {
+   "lot": 34,
+   "space": "D4",
+   "id": "34-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    1984.3,
+    2201.4,
+    2054.3,
+    2304.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "A1",
+   "id": "35-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    933.9,
+    2098.4,
+    1003.9,
+    2201.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "A2",
+   "id": "35-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1003.9,
+    2098.4,
+    1073.9,
+    2201.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "A3",
+   "id": "35-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1073.9,
+    2098.4,
+    1143.9,
+    2201.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "A4",
+   "id": "35-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1143.9,
+    2098.4,
+    1213.9,
+    2201.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "B1",
+   "id": "35-B1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    1213.9,
+    2098.4,
+    1283.9,
+    2201.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "B2",
+   "id": "35-B2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1283.9,
+    2098.4,
+    1353.9,
+    2201.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "B3",
+   "id": "35-B3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1353.9,
+    2098.4,
+    1423.9,
+    2201.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "B4",
+   "id": "35-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1423.9,
+    2098.4,
+    1493.9,
+    2201.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "C1",
+   "id": "35-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    933.9,
+    2201.4,
+    1003.9,
+    2304.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "C2",
+   "id": "35-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1003.9,
+    2201.4,
+    1073.9,
+    2304.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "C3",
+   "id": "35-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1073.9,
+    2201.4,
+    1143.9,
+    2304.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "C4",
+   "id": "35-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1143.9,
+    2201.4,
+    1213.9,
+    2304.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "D1",
+   "id": "35-D1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    1213.9,
+    2201.4,
+    1283.9,
+    2304.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "D2",
+   "id": "35-D2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    1283.9,
+    2201.4,
+    1353.9,
+    2304.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "D3",
+   "id": "35-D3",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    1353.9,
+    2201.4,
+    1423.9,
+    2304.4
+   ]
+  },
+  {
+   "lot": 35,
+   "space": "D4",
+   "id": "35-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    1423.9,
+    2201.4,
+    1493.9,
+    2304.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "A1",
+   "id": "36-A1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    373.1,
+    2095.4,
+    443.1,
+    2198.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "A2",
+   "id": "36-A2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    443.1,
+    2095.4,
+    513.1,
+    2198.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "A3",
+   "id": "36-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    513.1,
+    2095.4,
+    583.1,
+    2198.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "A4",
+   "id": "36-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    583.1,
+    2095.4,
+    653.1,
+    2198.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "B1",
+   "id": "36-B1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    653.1,
+    2095.4,
+    723.1,
+    2198.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "B2",
+   "id": "36-B2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    723.1,
+    2095.4,
+    793.1,
+    2198.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "B3",
+   "id": "36-B3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    793.1,
+    2095.4,
+    863.1,
+    2198.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "B4",
+   "id": "36-B4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    863.1,
+    2095.4,
+    933.1,
+    2198.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "C1",
+   "id": "36-C1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    373.1,
+    2198.4,
+    443.1,
+    2301.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "C2",
+   "id": "36-C2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    443.1,
+    2198.4,
+    513.1,
+    2301.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "C3",
+   "id": "36-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    513.1,
+    2198.4,
+    583.1,
+    2301.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "C4",
+   "id": "36-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    583.1,
+    2198.4,
+    653.1,
+    2301.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "D1",
+   "id": "36-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    653.1,
+    2198.4,
+    723.1,
+    2301.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "D2",
+   "id": "36-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    723.1,
+    2198.4,
+    793.1,
+    2301.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "D3",
+   "id": "36-D3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    793.1,
+    2198.4,
+    863.1,
+    2301.4
+   ]
+  },
+  {
+   "lot": 36,
+   "space": "D4",
+   "id": "36-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    863.1,
+    2198.4,
+    933.1,
+    2301.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "A1",
+   "id": "47-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3808.3,
+    533.4,
+    3878.3,
+    636.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "A2",
+   "id": "47-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3878.3,
+    533.4,
+    3948.3,
+    636.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "A3",
+   "id": "47-A3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3948.3,
+    533.4,
+    4018.3,
+    636.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "A4",
+   "id": "47-A4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    4018.3,
+    533.4,
+    4088.3,
+    636.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "B1",
+   "id": "47-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    4088.3,
+    533.4,
+    4158.3,
+    636.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "B2",
+   "id": "47-B2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    4158.3,
+    533.4,
+    4228.3,
+    636.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "B3",
+   "id": "47-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4228.3,
+    533.4,
+    4298.3,
+    636.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "B4",
+   "id": "47-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    4298.3,
+    533.4,
+    4368.3,
+    636.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "C1",
+   "id": "47-C1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3808.3,
+    636.4,
+    3878.3,
+    739.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "C2",
+   "id": "47-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3878.3,
+    636.4,
+    3948.3,
+    739.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "C3",
+   "id": "47-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3948.3,
+    636.4,
+    4018.3,
+    739.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "C4",
+   "id": "47-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4018.3,
+    636.4,
+    4088.3,
+    739.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "D1",
+   "id": "47-D1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    4088.3,
+    636.4,
+    4158.3,
+    739.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "D2",
+   "id": "47-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4158.3,
+    636.4,
+    4228.3,
+    739.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "D3",
+   "id": "47-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4228.3,
+    636.4,
+    4298.3,
+    739.4
+   ]
+  },
+  {
+   "lot": 47,
+   "space": "D4",
+   "id": "47-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4298.3,
+    636.4,
+    4368.3,
+    739.4
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "A1",
+   "id": "48-A1",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    3244.2,
+    531.9,
+    3314.2,
+    634.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "A2",
+   "id": "48-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3314.2,
+    531.9,
+    3384.2,
+    634.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "A3",
+   "id": "48-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3384.2,
+    531.9,
+    3454.2,
+    634.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "A4",
+   "id": "48-A4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3454.2,
+    531.9,
+    3524.2,
+    634.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "B1",
+   "id": "48-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3524.2,
+    531.9,
+    3594.2,
+    634.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "B2",
+   "id": "48-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3594.2,
+    531.9,
+    3664.2,
+    634.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "B3",
+   "id": "48-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3664.2,
+    531.9,
+    3734.2,
+    634.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "B4",
+   "id": "48-B4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3734.2,
+    531.9,
+    3804.2,
+    634.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "C1",
+   "id": "48-C1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3244.2,
+    634.9,
+    3314.2,
+    737.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "C2",
+   "id": "48-C2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3314.2,
+    634.9,
+    3384.2,
+    737.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "C3",
+   "id": "48-C3",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3384.2,
+    634.9,
+    3454.2,
+    737.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "C4",
+   "id": "48-C4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3454.2,
+    634.9,
+    3524.2,
+    737.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "D1",
+   "id": "48-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3524.2,
+    634.9,
+    3594.2,
+    737.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "D2",
+   "id": "48-D2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3594.2,
+    634.9,
+    3664.2,
+    737.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "D3",
+   "id": "48-D3",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    3664.2,
+    634.9,
+    3734.2,
+    737.9
+   ]
+  },
+  {
+   "lot": 48,
+   "space": "D4",
+   "id": "48-D4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3734.2,
+    634.9,
+    3804.2,
+    737.9
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "A1",
+   "id": "49-A1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3805.6,
+    738.4,
+    3875.6,
+    841.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "A2",
+   "id": "49-A2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3875.6,
+    738.4,
+    3945.6,
+    841.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "A3",
+   "id": "49-A3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3945.6,
+    738.4,
+    4015.6,
+    841.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "A4",
+   "id": "49-A4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4015.6,
+    738.4,
+    4085.6,
+    841.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "B1",
+   "id": "49-B1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4085.6,
+    738.4,
+    4155.6,
+    841.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "B2",
+   "id": "49-B2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4155.6,
+    738.4,
+    4225.6,
+    841.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "B3",
+   "id": "49-B3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4225.6,
+    738.4,
+    4295.6,
+    841.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "B4",
+   "id": "49-B4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4295.6,
+    738.4,
+    4365.6,
+    841.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "C1",
+   "id": "49-C1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3805.6,
+    841.4,
+    3875.6,
+    944.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "C2",
+   "id": "49-C2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3875.6,
+    841.4,
+    3945.6,
+    944.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "C3",
+   "id": "49-C3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3945.6,
+    841.4,
+    4015.6,
+    944.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "C4",
+   "id": "49-C4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4015.6,
+    841.4,
+    4085.6,
+    944.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "D1",
+   "id": "49-D1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4085.6,
+    841.4,
+    4155.6,
+    944.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "D2",
+   "id": "49-D2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4155.6,
+    841.4,
+    4225.6,
+    944.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "D3",
+   "id": "49-D3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4225.6,
+    841.4,
+    4295.6,
+    944.4
+   ]
+  },
+  {
+   "lot": 49,
+   "space": "D4",
+   "id": "49-D4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4295.6,
+    841.4,
+    4365.6,
+    944.4
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "A1",
+   "id": "50-A1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3247.3,
+    738.8,
+    3317.3,
+    841.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "A2",
+   "id": "50-A2",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3317.3,
+    738.8,
+    3387.3,
+    841.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "A3",
+   "id": "50-A3",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3387.3,
+    738.8,
+    3457.3,
+    841.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "A4",
+   "id": "50-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3457.3,
+    738.8,
+    3527.3,
+    841.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "B1",
+   "id": "50-B1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3527.3,
+    738.8,
+    3597.3,
+    841.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "B2",
+   "id": "50-B2",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3597.3,
+    738.8,
+    3667.3,
+    841.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "B3",
+   "id": "50-B3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3667.3,
+    738.8,
+    3737.3,
+    841.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "B4",
+   "id": "50-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3737.3,
+    738.8,
+    3807.3,
+    841.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "C1",
+   "id": "50-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3247.3,
+    841.8,
+    3317.3,
+    944.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "C2",
+   "id": "50-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3317.3,
+    841.8,
+    3387.3,
+    944.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "C3",
+   "id": "50-C3",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3387.3,
+    841.8,
+    3457.3,
+    944.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "C4",
+   "id": "50-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3457.3,
+    841.8,
+    3527.3,
+    944.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "D1",
+   "id": "50-D1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3527.3,
+    841.8,
+    3597.3,
+    944.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "D2",
+   "id": "50-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3597.3,
+    841.8,
+    3667.3,
+    944.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "D3",
+   "id": "50-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3667.3,
+    841.8,
+    3737.3,
+    944.8
+   ]
+  },
+  {
+   "lot": 50,
+   "space": "D4",
+   "id": "50-D4",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3737.3,
+    841.8,
+    3807.3,
+    944.8
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "A1",
+   "id": "51-A1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3806.3,
+    944.7,
+    3876.3,
+    1047.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "A2",
+   "id": "51-A2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3876.3,
+    944.7,
+    3946.3,
+    1047.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "A3",
+   "id": "51-A3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3946.3,
+    944.7,
+    4016.3,
+    1047.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "A4",
+   "id": "51-A4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4016.3,
+    944.7,
+    4086.3,
+    1047.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "B1",
+   "id": "51-B1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4086.3,
+    944.7,
+    4156.3,
+    1047.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "B2",
+   "id": "51-B2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4156.3,
+    944.7,
+    4226.3,
+    1047.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "B3",
+   "id": "51-B3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4226.3,
+    944.7,
+    4296.3,
+    1047.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "B4",
+   "id": "51-B4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4296.3,
+    944.7,
+    4366.3,
+    1047.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "C1",
+   "id": "51-C1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3806.3,
+    1047.7,
+    3876.3,
+    1150.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "C2",
+   "id": "51-C2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3876.3,
+    1047.7,
+    3946.3,
+    1150.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "C3",
+   "id": "51-C3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3946.3,
+    1047.7,
+    4016.3,
+    1150.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "C4",
+   "id": "51-C4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4016.3,
+    1047.7,
+    4086.3,
+    1150.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "D1",
+   "id": "51-D1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4086.3,
+    1047.7,
+    4156.3,
+    1150.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "D2",
+   "id": "51-D2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4156.3,
+    1047.7,
+    4226.3,
+    1150.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "D3",
+   "id": "51-D3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4226.3,
+    1047.7,
+    4296.3,
+    1150.7
+   ]
+  },
+  {
+   "lot": 51,
+   "space": "D4",
+   "id": "51-D4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4296.3,
+    1047.7,
+    4366.3,
+    1150.7
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "A1",
+   "id": "52-A1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3248.5,
+    943.5,
+    3318.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "A2",
+   "id": "52-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3318.5,
+    943.5,
+    3388.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "A3",
+   "id": "52-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3388.5,
+    943.5,
+    3458.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "A4",
+   "id": "52-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3458.5,
+    943.5,
+    3528.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "B1",
+   "id": "52-B1",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3528.5,
+    943.5,
+    3598.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "B2",
+   "id": "52-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3598.5,
+    943.5,
+    3668.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "B3",
+   "id": "52-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3668.5,
+    943.5,
+    3738.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "B4",
+   "id": "52-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3738.5,
+    943.5,
+    3808.5,
+    1046.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "C1",
+   "id": "52-C1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3248.5,
+    1046.5,
+    3318.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "C2",
+   "id": "52-C2",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3318.5,
+    1046.5,
+    3388.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "C3",
+   "id": "52-C3",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3388.5,
+    1046.5,
+    3458.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "C4",
+   "id": "52-C4",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    3458.5,
+    1046.5,
+    3528.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "D1",
+   "id": "52-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3528.5,
+    1046.5,
+    3598.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "D2",
+   "id": "52-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3598.5,
+    1046.5,
+    3668.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "D3",
+   "id": "52-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3668.5,
+    1046.5,
+    3738.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 52,
+   "space": "D4",
+   "id": "52-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3738.5,
+    1046.5,
+    3808.5,
+    1149.5
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "A1",
+   "id": "53-A1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3806.1,
+    1151.1,
+    3876.1,
+    1254.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "A2",
+   "id": "53-A2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3876.1,
+    1151.1,
+    3946.1,
+    1254.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "A3",
+   "id": "53-A3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3946.1,
+    1151.1,
+    4016.1,
+    1254.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "A4",
+   "id": "53-A4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4016.1,
+    1151.1,
+    4086.1,
+    1254.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "B1",
+   "id": "53-B1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4086.1,
+    1151.1,
+    4156.1,
+    1254.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "B2",
+   "id": "53-B2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4156.1,
+    1151.1,
+    4226.1,
+    1254.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "B3",
+   "id": "53-B3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4226.1,
+    1151.1,
+    4296.1,
+    1254.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "B4",
+   "id": "53-B4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4296.1,
+    1151.1,
+    4366.1,
+    1254.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "C1",
+   "id": "53-C1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3806.1,
+    1254.1,
+    3876.1,
+    1357.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "C2",
+   "id": "53-C2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3876.1,
+    1254.1,
+    3946.1,
+    1357.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "C3",
+   "id": "53-C3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3946.1,
+    1254.1,
+    4016.1,
+    1357.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "C4",
+   "id": "53-C4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4016.1,
+    1254.1,
+    4086.1,
+    1357.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "D1",
+   "id": "53-D1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4086.1,
+    1254.1,
+    4156.1,
+    1357.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "D2",
+   "id": "53-D2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4156.1,
+    1254.1,
+    4226.1,
+    1357.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "D3",
+   "id": "53-D3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4226.1,
+    1254.1,
+    4296.1,
+    1357.1
+   ]
+  },
+  {
+   "lot": 53,
+   "space": "D4",
+   "id": "53-D4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4296.1,
+    1254.1,
+    4366.1,
+    1357.1
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "A1",
+   "id": "54-A1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3246.1,
+    1150.9,
+    3316.1,
+    1253.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "A2",
+   "id": "54-A2",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3316.1,
+    1150.9,
+    3386.1,
+    1253.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "A3",
+   "id": "54-A3",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3386.1,
+    1150.9,
+    3456.1,
+    1253.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "A4",
+   "id": "54-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3456.1,
+    1150.9,
+    3526.1,
+    1253.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "B1",
+   "id": "54-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3526.1,
+    1150.9,
+    3596.1,
+    1253.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "B2",
+   "id": "54-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3596.1,
+    1150.9,
+    3666.1,
+    1253.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "B3",
+   "id": "54-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3666.1,
+    1150.9,
+    3736.1,
+    1253.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "B4",
+   "id": "54-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3736.1,
+    1150.9,
+    3806.1,
+    1253.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "C1",
+   "id": "54-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3246.1,
+    1253.9,
+    3316.1,
+    1356.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "C2",
+   "id": "54-C2",
+   "color": "red",
+   "status": "occupied",
+   "rect_px": [
+    3316.1,
+    1253.9,
+    3386.1,
+    1356.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "C3",
+   "id": "54-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3386.1,
+    1253.9,
+    3456.1,
+    1356.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "C4",
+   "id": "54-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3456.1,
+    1253.9,
+    3526.1,
+    1356.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "D1",
+   "id": "54-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3526.1,
+    1253.9,
+    3596.1,
+    1356.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "D2",
+   "id": "54-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3596.1,
+    1253.9,
+    3666.1,
+    1356.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "D3",
+   "id": "54-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3666.1,
+    1253.9,
+    3736.1,
+    1356.9
+   ]
+  },
+  {
+   "lot": 54,
+   "space": "D4",
+   "id": "54-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3736.1,
+    1253.9,
+    3806.1,
+    1356.9
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "A1",
+   "id": "55-A1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3806.0,
+    1357.2,
+    3876.0,
+    1460.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "A2",
+   "id": "55-A2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3876.0,
+    1357.2,
+    3946.0,
+    1460.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "A3",
+   "id": "55-A3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3946.0,
+    1357.2,
+    4016.0,
+    1460.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "A4",
+   "id": "55-A4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4016.0,
+    1357.2,
+    4086.0,
+    1460.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "B1",
+   "id": "55-B1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4086.0,
+    1357.2,
+    4156.0,
+    1460.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "B2",
+   "id": "55-B2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4156.0,
+    1357.2,
+    4226.0,
+    1460.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "B3",
+   "id": "55-B3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4226.0,
+    1357.2,
+    4296.0,
+    1460.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "B4",
+   "id": "55-B4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4296.0,
+    1357.2,
+    4366.0,
+    1460.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "C1",
+   "id": "55-C1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3806.0,
+    1460.2,
+    3876.0,
+    1563.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "C2",
+   "id": "55-C2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3876.0,
+    1460.2,
+    3946.0,
+    1563.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "C3",
+   "id": "55-C3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    3946.0,
+    1460.2,
+    4016.0,
+    1563.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "C4",
+   "id": "55-C4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4016.0,
+    1460.2,
+    4086.0,
+    1563.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "D1",
+   "id": "55-D1",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4086.0,
+    1460.2,
+    4156.0,
+    1563.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "D2",
+   "id": "55-D2",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4156.0,
+    1460.2,
+    4226.0,
+    1563.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "D3",
+   "id": "55-D3",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4226.0,
+    1460.2,
+    4296.0,
+    1563.2
+   ]
+  },
+  {
+   "lot": 55,
+   "space": "D4",
+   "id": "55-D4",
+   "color": "gray",
+   "status": "bohri",
+   "rect_px": [
+    4296.0,
+    1460.2,
+    4366.0,
+    1563.2
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "A1",
+   "id": "56-A1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3245.8,
+    1356.9,
+    3315.8,
+    1459.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "A2",
+   "id": "56-A2",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3315.8,
+    1356.9,
+    3385.8,
+    1459.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "A3",
+   "id": "56-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3385.8,
+    1356.9,
+    3455.8,
+    1459.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "A4",
+   "id": "56-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3455.8,
+    1356.9,
+    3525.8,
+    1459.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "B1",
+   "id": "56-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3525.8,
+    1356.9,
+    3595.8,
+    1459.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "B2",
+   "id": "56-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3595.8,
+    1356.9,
+    3665.8,
+    1459.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "B3",
+   "id": "56-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3665.8,
+    1356.9,
+    3735.8,
+    1459.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "B4",
+   "id": "56-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3735.8,
+    1356.9,
+    3805.8,
+    1459.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "C1",
+   "id": "56-C1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3245.8,
+    1459.9,
+    3315.8,
+    1562.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "C2",
+   "id": "56-C2",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3315.8,
+    1459.9,
+    3385.8,
+    1562.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "C3",
+   "id": "56-C3",
+   "color": "darkblue",
+   "status": "occupied",
+   "rect_px": [
+    3385.8,
+    1459.9,
+    3455.8,
+    1562.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "C4",
+   "id": "56-C4",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3455.8,
+    1459.9,
+    3525.8,
+    1562.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "D1",
+   "id": "56-D1",
+   "color": "lightblue",
+   "status": "reserved",
+   "rect_px": [
+    3525.8,
+    1459.9,
+    3595.8,
+    1562.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "D2",
+   "id": "56-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3595.8,
+    1459.9,
+    3665.8,
+    1562.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "D3",
+   "id": "56-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3665.8,
+    1459.9,
+    3735.8,
+    1562.9
+   ]
+  },
+  {
+   "lot": 56,
+   "space": "D4",
+   "id": "56-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3735.8,
+    1459.9,
+    3805.8,
+    1562.9
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "A1",
+   "id": "57-A1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3806.0,
+    1564.0,
+    3876.0,
+    1667.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "A2",
+   "id": "57-A2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3876.0,
+    1564.0,
+    3946.0,
+    1667.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "A3",
+   "id": "57-A3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3946.0,
+    1564.0,
+    4016.0,
+    1667.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "A4",
+   "id": "57-A4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4016.0,
+    1564.0,
+    4086.0,
+    1667.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "B1",
+   "id": "57-B1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4086.0,
+    1564.0,
+    4156.0,
+    1667.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "B2",
+   "id": "57-B2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4156.0,
+    1564.0,
+    4226.0,
+    1667.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "B3",
+   "id": "57-B3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4226.0,
+    1564.0,
+    4296.0,
+    1667.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "B4",
+   "id": "57-B4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4296.0,
+    1564.0,
+    4366.0,
+    1667.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "C1",
+   "id": "57-C1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3806.0,
+    1667.0,
+    3876.0,
+    1770.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "C2",
+   "id": "57-C2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3876.0,
+    1667.0,
+    3946.0,
+    1770.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "C3",
+   "id": "57-C3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    3946.0,
+    1667.0,
+    4016.0,
+    1770.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "C4",
+   "id": "57-C4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4016.0,
+    1667.0,
+    4086.0,
+    1770.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "D1",
+   "id": "57-D1",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4086.0,
+    1667.0,
+    4156.0,
+    1770.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "D2",
+   "id": "57-D2",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4156.0,
+    1667.0,
+    4226.0,
+    1770.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "D3",
+   "id": "57-D3",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4226.0,
+    1667.0,
+    4296.0,
+    1770.0
+   ]
+  },
+  {
+   "lot": 57,
+   "space": "D4",
+   "id": "57-D4",
+   "color": "white",
+   "status": "available",
+   "rect_px": [
+    4296.0,
+    1667.0,
+    4366.0,
+    1770.0
+   ]
+  },
+  {
+   "lot": 58,
+   "space": "C1",
+   "id": "58-C1",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3245.6,
+    1665.7,
+    3315.6,
+    1768.7
+   ]
+  },
+  {
+   "lot": 58,
+   "space": "C2",
+   "id": "58-C2",
+   "color": "green",
+   "status": "unusable",
+   "rect_px": [
+    3315.6,
+    1665.7,
+    3385.6,
+    1768.7
+   ]
+  }
+ ]
+}

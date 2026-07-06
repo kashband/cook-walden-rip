@@ -1,4 +1,6 @@
 node_modules/
 dist/
+data/reference/debug/
 *.local
 .DS_Store
+__pycache__/

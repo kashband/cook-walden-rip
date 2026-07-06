@@ -4,10 +4,9 @@ Unknowns that need the project owner or IABA. **Do not invent answers to these**
 build around them (placeholder data, clearly marked) until resolved.
 
 ## Layout diagram (data/reference/IABA-Layout.pdf)
-- [ ] **Legend meanings** — the diagram color-codes spaces with 5 colors (dark red,
-      dark blue, light blue, gray, green) but the legend text isn't extractable from
-      the PDF. Owner must state what each color means (occupied / reserved / sold /
-      available / blocked…?).
+- [ ] **Red vs. dark blue nuance** — owner says dark red = occupied and dark blue =
+      "used" (light blue = vacant/held). Both currently map to `occupied`; confirm
+      what distinguishes red from dark blue (member vs. non-member? paid vs. unpaid?).
 - [ ] Lots 59–62 are drawn dashed — future/unbuilt lots? Lot 58 is partial.
 - [ ] Exact rotation: owner says ~120° clockwise aligns the diagram with the ground;
       calibrate precisely in the editor against the 2019 imagery.
@@ -44,3 +43,8 @@ build around them (placeholder data, clearly marked) until resolved.
   walkways, not uniform rows), and per-space status color-coding.
 - 2026-07-05 — Row orientation: rows do not align to north; diagram-to-ground rotation
   is ~120° CW per owner (exact bearing to be calibrated in the editor).
+- 2026-07-05 — **Legend confirmed by owner**: dark red = occupied (buried), dark blue =
+  used, light blue = vacant (held), white = available, gray = Bohri (another community's
+  lots), green = tree/bench/unusable. Lot count corrected: 52 lots (01–36, 47–62);
+  37–46 don't exist. Digitized: 671 spaces in data/reference/layout-spaces.json
+  (278 available / 177 reserved / 130 occupied / 64 bohri / 22 unusable).

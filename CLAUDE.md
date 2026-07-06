@@ -16,10 +16,12 @@ constraint (static site, deployable to GitHub Pages).
 - IABA owns **only one section** of the cemetery — only that section is mapped
 - Section center coordinates: `30.43730366645736, -97.66220675345387`
 - **Official layout diagram in hand** (2026-07-05): `data/reference/IABA-Layout.pdf`
-  (+ rendered PNG). ~62 lots of 16 spaces each (A1–A4/B1–B4 over C1–C4/D1–D4, 8 wide ×
-  2 deep), color-coded by status. The diagram must be rotated ~120° clockwise to align
-  with the ground. Legend meanings + dashed lots 59–62 unconfirmed — see
-  docs/OPEN-QUESTIONS.md. Person-level burial records still come from the owner's survey.
+  (+ rendered PNG). 52 lots (01–36, 47–62; 37–46 don't exist) of up to 16 spaces each
+  (A1–A4/B1–B4 over C1–C4/D1–D4, 8 wide × 2 deep), color-coded by status. Rotate
+  ~120° clockwise to align with the ground. **Digitized** to
+  `data/reference/layout-spaces.json` (671 spaces, statuses + pixel geometry) by
+  `scripts/digitize_layout.py`. Person-level burial records still come from the
+  owner's survey.
 
 ## Locked decisions (2026-07-05, with project owner)
 
@@ -47,9 +49,9 @@ hash routing (`#/plot/A-12`) so plot pages work on a static host.
 ```
 id: "14-B3"         // real IABA scheme: lot number + space code
 lot: 14, space: "B3"
-status: "occupied" | "reserved" | "available" | "unknown"
-                    // enum provisional: the layout legend has 5 colors, meanings
-                    // pending owner confirmation (docs/OPEN-QUESTIONS.md)
+status: "occupied" | "reserved" | "available" | "bohri" | "unusable" | "unknown"
+                    // from the layout legend: red/darkblue=occupied, lightblue=reserved,
+                    // white=available, gray=bohri (Bohra community), green=unusable
 person?: { name, dob?, dod?, notes? }   // only when occupied/reserved
 photos?: string[]   // future: marker photos from survey
 ```

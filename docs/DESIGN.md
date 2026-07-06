@@ -51,13 +51,24 @@ or by hand) and committing.
 ## Reference layout (data/reference/IABA-Layout.pdf)
 
 Owner-provided official diagram of the section (added 2026-07-05; rendered PNG
-alongside). Structure: ~62 numbered lots, each 16 spaces in a fixed pattern —
-top row `A1 A2 A3 A4 B1 B2 B3 B4`, bottom row `C1 C2 C3 C4 D1 D2 D3 D4`. Plot ID =
-`{lot}-{space}` (e.g. `14-B3`). Spaces are color-coded with a 5-color status legend
-(meanings pending owner confirmation). Lots 59–62 are dashed (likely future). The
-diagram is rotated relative to the ground: ~120° clockwise brings it into alignment.
-This document is the source of truth for IDs and statuses; imagery is only for
-georeferencing, and the field survey adds person data.
+alongside). Structure: 52 numbered lots (01–36, 47–62; 37–46 don't exist), each up to
+16 spaces in a fixed pattern — top row `A1 A2 A3 A4 B1 B2 B3 B4`, bottom row
+`C1 C2 C3 C4 D1 D2 D3 D4`. Plot ID = `{lot}-{space}` (e.g. `14-B3`). Lots 59–62 are
+dashed (likely future). The diagram is rotated relative to the ground: ~120° clockwise
+brings it into alignment. This document is the source of truth for IDs and statuses;
+imagery is only for georeferencing, and the field survey adds person data.
+
+Legend (confirmed by owner 2026-07-05): dark red = occupied (buried) · dark blue =
+used (nuance vs. red open) · light blue = vacant/held → `reserved` · white =
+available · gray = Bohri (another community's lots) · green = tree/bench →
+`unusable`.
+
+**Digitized** by `scripts/digitize_layout.py` (labels stage → cells QA stage →
+export): finds the 52 orange lot labels, measures the 560×206 px lot frames from
+solid borders, samples each space's fill color, and writes
+`data/reference/layout-spaces.json` — 671 spaces with `{id, lot, space, color,
+status, rect_px}`. The pixel rects mean the map grid is produced by a single
+diagram→ground transform (anchor + rotation + px→m scale), not parametric generation.
 
 ## Grid generator (`/editor`)
 
