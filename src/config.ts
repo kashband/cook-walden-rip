@@ -12,3 +12,15 @@ export const ESRI_WORLD_IMAGERY_URL =
 
 export const ESRI_ATTRIBUTION =
   "Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community";
+
+/**
+ * High-res (6-inch) leaf-off orthoimagery of the section, January 2019.
+ * Exported once from TxGIO's StratMap19_NCCIR_CapArea ImageServer and committed
+ * to public/imagery/. Bounds must match the export bbox exactly.
+ */
+export const TXGIO_OVERLAY_URL = "/imagery/iaba-2019-txgio.jpg";
+export const TXGIO_OVERLAY_BOUNDS: [[number, number], [number, number]] = [
+  [30.43635, -97.6633],
+  [30.43825, -97.6611],
+];
+export const TXGIO_ATTRIBUTION = "2019 imagery: TxGIO StratMap";

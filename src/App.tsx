@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
+import { MapContainer, TileLayer, GeoJSON, ImageOverlay, LayersControl } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import sectionRaw from "../data/section.geojson?raw";
 import {
@@ -8,6 +8,9 @@ import {
   MAX_ZOOM,
   ESRI_WORLD_IMAGERY_URL,
   ESRI_ATTRIBUTION,
+  TXGIO_OVERLAY_URL,
+  TXGIO_OVERLAY_BOUNDS,
+  TXGIO_ATTRIBUTION,
 } from "./config";
 
 const section = JSON.parse(sectionRaw) as GeoJSON.FeatureCollection;
@@ -40,6 +43,15 @@ export default function App() {
           maxNativeZoom={MAX_NATIVE_ZOOM}
           maxZoom={MAX_ZOOM}
         />
+        <LayersControl position="topright">
+          <LayersControl.Overlay checked name="2019 6-inch detail (TxGIO)">
+            <ImageOverlay
+              url={TXGIO_OVERLAY_URL}
+              bounds={TXGIO_OVERLAY_BOUNDS}
+              attribution={TXGIO_ATTRIBUTION}
+            />
+          </LayersControl.Overlay>
+        </LayersControl>
         <GeoJSON data={section} style={sectionStyle} />
       </MapContainer>
     </div>
