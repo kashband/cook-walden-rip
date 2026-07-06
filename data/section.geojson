@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IABA Section",
+        "approximate": true,
+        "note": "Boundary eyeballed from Esri World Imagery (2026-07-05) around the hedged burial block at the section center coordinate. Replace with surveyed/plat boundary — see docs/OPEN-QUESTIONS.md."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-97.66243, 30.43748],
+            [-97.66201, 30.43761],
+            [-97.66190, 30.43732],
+            [-97.66203, 30.43702],
+            [-97.66226, 30.43693],
+            [-97.66256, 30.43722],
+            [-97.66243, 30.43748]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 Status legend: ☐ not started · ◐ in progress · ☑ done
 
-## ☐ M1 — Map shell
+## ☑ M1 — Map shell (2026-07-05)
 
 Vite + React + TS app; Leaflet map with Esri World Imagery, centered on the IABA
 section (`30.43730366645736, -97.66220675345387`); section boundary polygon rendered
