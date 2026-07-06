@@ -58,10 +58,13 @@ dashed (likely future). The diagram is rotated relative to the ground: ~120° cl
 brings it into alignment. This document is the source of truth for IDs and statuses;
 imagery is only for georeferencing, and the field survey adds person data.
 
-Legend (confirmed by owner 2026-07-05): dark red = occupied (buried) · dark blue =
-used (nuance vs. red open) · light blue = vacant/held → `reserved` · white =
-available · gray = Bohri (another community's lots) · green = tree/bench →
-`unusable`.
+Legend (legible render obtained 2026-07-06, with counts): dark red = **Buried** (100)
+· dark blue = **Used** (30) · light blue = **Vacant** (128*) · gray = **Bohri** (64,
+another community's lots) · green = **Tree/Bench/Unusable** (22) · white = available.
+Both blues map to `occupied`, light blue to `reserved`. *The diagram actually contains
+129 light-blue spaces — legend tally likely stale. A second, darker gray (48 spaces in
+lots 30/31/35/36) is not in the legend → status `unknown` (docs/OPEN-QUESTIONS.md).
+`scripts/digitize_layout.py export` validates per-color counts against the legend.
 
 **Digitized** by `scripts/digitize_layout.py` (labels stage → cells QA stage →
 export): finds the 52 orange lot labels, measures the 560×206 px lot frames from

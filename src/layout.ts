@@ -115,14 +115,16 @@ export const DIAGRAM_COLORS: Record<string, string> = {
   lightblue: "#9cb0dc",
   white: "#ffffff",
   gray: "#bfbfbf",
+  darkgray: "#8a8a8a",
   green: "#9fce63",
 };
 
+/** Legend labels (diagram legend: Buried / Used / Vacant / Bohri / Tree-Bench). */
 export const STATUS_LABELS: Record<string, string> = {
-  occupied: "Occupied",
-  reserved: "Reserved",
+  occupied: "Occupied (buried/used)",
+  reserved: "Reserved (vacant)",
   available: "Available",
   bohri: "Bohra community",
   unusable: "Unusable (tree/bench)",
-  unknown: "Unknown",
+  unknown: "Unconfirmed (dark gray)",
 };

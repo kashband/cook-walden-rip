@@ -166,24 +166,27 @@ export default function EditorPage() {
         <section>
           <h3>Legend (diagram colors)</h3>
           <div className="legend">
-            {Object.entries(STATUS_LABELS).map(([status, label]) =>
-              status === "unknown" ? null : (
-                <div key={status} className="legend-row">
-                  <span
-                    className="swatch"
-                    style={{
-                      background:
-                        DIAGRAM_COLORS[
-                          { occupied: "red", reserved: "lightblue", available: "white", bohri: "gray", unusable: "green" }[
-                            status
-                          ] ?? "white"
-                        ],
-                    }}
-                  />
-                  {label}
-                </div>
-              ),
-            )}
+            {Object.entries(STATUS_LABELS).map(([status, label]) => (
+              <div key={status} className="legend-row">
+                <span
+                  className="swatch"
+                  style={{
+                    background:
+                      DIAGRAM_COLORS[
+                        {
+                          occupied: "red",
+                          reserved: "lightblue",
+                          available: "white",
+                          bohri: "gray",
+                          unusable: "green",
+                          unknown: "darkgray",
+                        }[status] ?? "white"
+                      ],
+                  }}
+                />
+                {label}
+              </div>
+            ))}
           </div>
         </section>
 

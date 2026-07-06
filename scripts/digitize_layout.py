@@ -37,12 +37,14 @@ CELL_H = 103.0
 LABEL_DX = 8.0
 LABEL_DY = 15.0
 
-# Legend colors sampled from the render.
+# Legend colors sampled from the render. Note TWO grays: the legend's Bohri gray
+# (~189 neutral) and a darker unlabeled gray (~165) used for lots 30/31/35/36.
 PALETTE = {
     "red": (176, 36, 24),
-    "darkblue": (79, 113, 190),
-    "lightblue": (156, 176, 220),
-    "gray": (191, 191, 191),
+    "darkblue": (60, 110, 185),
+    "lightblue": (142, 163, 208),
+    "gray": (189, 189, 189),
+    "darkgray": (165, 165, 165),
     "green": (159, 206, 99),
     "white": (255, 255, 255),
 }
@@ -50,14 +52,21 @@ ORANGE = (233, 113, 50)
 TAN = (248, 203, 173)  # walkway fill — must not classify as a status
 
 # Diagram color -> plot status (legend per owner, 2026-07-05).
+# Legend counts: Buried 100 / Used 30 / Vacant 128 / Bohri 64 / Tree-Bench 22.
+# darkgray is NOT in the legend (its cells would break the Bohri=64 count):
+# meaning unconfirmed -> "unknown" until the owner clarifies.
 COLOR_TO_STATUS = {
     "red": "occupied",
     "darkblue": "occupied",
     "lightblue": "reserved",
     "white": "available",
     "gray": "bohri",
+    "darkgray": "unknown",
     "green": "unusable",
 }
+
+# Expected per-color counts from the legible legend render (2026-07-06).
+EXPECTED_COLOR_COUNTS = {"red": 100, "darkblue": 30, "lightblue": 128, "gray": 64, "green": 22}
 
 SPACES = [  # (space code, col 0..7, row 0..1)
     *[(f"A{i+1}", i, 0) for i in range(4)],
@@ -126,12 +135,23 @@ def find_labels(rgb, alpha):
     return out
 
 
-def classify_patch(rgb, alpha, x0, y0, x1, y1):
+def label_mask(shape, labels):
+    """Boolean mask of areas covered by lot labels (+ drop shadow margin)."""
+    m = np.zeros(shape, dtype=bool)
+    for x, y, _ in labels:
+        m[max(0, int(y) - 50) : int(y) + 50, max(0, int(x) - 90) : int(x) + 90] = True
+    return m
+
+
+def classify_patch(rgb, alpha, x0, y0, x1, y1, masked=None):
     """Modal palette color of a cell interior, ignoring text/label/transparent px."""
     patch = rgb[y0:y1, x0:x1].reshape(-1, 3)
     a = alpha[y0:y1, x0:x1].reshape(-1)
-    if len(patch) == 0:
-        return "absent"
+    if masked is not None:
+        keep = ~masked[y0:y1, x0:x1].reshape(-1)
+        patch, a = patch[keep], a[keep]
+    if len(patch) < 400:  # fully under a label — cannot judge
+        return "unknown"
     opaque = a > 200
     if opaque.mean() < 0.5:
         return "absent"
@@ -189,6 +209,7 @@ def stage_labels():
 def stage_cells(export=False):
     rgb, alpha = load()
     labels = find_labels(rgb, alpha)
+    masked = label_mask(alpha.shape, labels)
     im = Image.open(PNG).convert("RGB")
     draw = ImageDraw.Draw(im)
     qa_colors = {**{k: tuple(v) for k, v in PALETTE.items()}, "absent": None, "unknown": (255, 0, 255)}
@@ -202,7 +223,7 @@ def stage_cells(export=False):
         for space, sx0, sy0, sx1, sy1, rect in lot_cells(x, y):
             if allowed is not None and space not in allowed:
                 continue
-            color = classify_patch(rgb, alpha, sx0, sy0, sx1, sy1)
+            color = classify_patch(rgb, alpha, sx0, sy0, sx1, sy1, masked)
             if color != "absent":
                 status = "future" if lot in FUTURE_LOTS else COLOR_TO_STATUS.get(color, "unknown")
                 records.append(
@@ -225,6 +246,11 @@ def stage_cells(export=False):
     if export:
         from collections import Counter
 
+        color_counts = Counter(r["color"] for r in records)
+        for color, expected in EXPECTED_COLOR_COUNTS.items():
+            got = color_counts.get(color, 0)
+            flag = "OK" if got == expected else f"MISMATCH (expected {expected})"
+            print(f"  {color}: {got} {flag}")
         counts = Counter(r["status"] for r in records)
         OUT_JSON.write_text(
             json.dumps(

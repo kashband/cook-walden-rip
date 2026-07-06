@@ -4,9 +4,15 @@ Unknowns that need the project owner or IABA. **Do not invent answers to these**
 build around them (placeholder data, clearly marked) until resolved.
 
 ## Layout diagram (data/reference/IABA-Layout.pdf)
-- [ ] **Red vs. dark blue nuance** — owner says dark red = occupied and dark blue =
-      "used" (light blue = vacant/held). Both currently map to `occupied`; confirm
-      what distinguishes red from dark blue (member vs. non-member? paid vs. unpaid?).
+- [ ] **Buried vs. Used** — the legend distinguishes dark red "Buried" from dark blue
+      "Used". Both currently map to `occupied`; confirm the practical difference.
+- [ ] **Unlabeled dark gray** — lots 31, 36 and halves of 30/35 (48 spaces) use a
+      darker gray (~RGB 165) that is NOT in the legend (Bohri gray ~189 covers exactly
+      the 64 spaces of lots 49/51/53/55). What do these lots mean? Currently
+      status `unknown`.
+- [ ] **Vacant count off by one** — the legend says Vacant (128), but the diagram
+      contains 129 decisively light-blue spaces. Likely a stale hand tally in the
+      source doc; confirm with IABA which space changed.
 - [ ] Lots 59–62 are drawn dashed — future/unbuilt lots? Lot 58 is partial.
 - [ ] Exact rotation: owner says ~120° clockwise aligns the diagram with the ground;
       calibrate precisely in the editor against the 2019 imagery.
