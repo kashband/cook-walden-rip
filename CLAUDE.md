@@ -15,8 +15,11 @@ constraint (static site, deployable to GitHub Pages).
 - Cemetery: Cook-Walden Capital Parks, 14501 N Interstate Hwy 35, Pflugerville, TX 78660
 - IABA owns **only one section** of the cemetery — only that section is mapped
 - Section center coordinates: `30.43730366645736, -97.66220675345387`
-- No official plot records in hand; ground truth comes from the owner physically
-  surveying the section (see docs/OPEN-QUESTIONS.md)
+- **Official layout diagram in hand** (2026-07-05): `data/reference/IABA-Layout.pdf`
+  (+ rendered PNG). ~62 lots of 16 spaces each (A1–A4/B1–B4 over C1–C4/D1–D4, 8 wide ×
+  2 deep), color-coded by status. The diagram must be rotated ~120° clockwise to align
+  with the ground. Legend meanings + dashed lots 59–62 unconfirmed — see
+  docs/OPEN-QUESTIONS.md. Person-level burial records still come from the owner's survey.
 
 ## Locked decisions (2026-07-05, with project owner)
 
@@ -26,8 +29,9 @@ constraint (static site, deployable to GitHub Pages).
   GeoJSON polygons at real lat/lng. (Google tiles are license-prohibited for this use.)
 - **Grid authoring:** a dev-only in-app grid generator/editor (`/editor` route) that
   parametrically generates the plot grid and exports GeoJSON — never hand-draw plots.
-- **Labeling:** placeholder scheme (`A-1`, `A-2`, … per row) until Cook-Walden's real
-  numbering is known; plot IDs must be swappable.
+- **Labeling (updated 2026-07-05):** the real IABA scheme from the layout diagram —
+  lot number + space code, plot ID format `"14-B3"` (lot 14, space B3). The earlier
+  `A-1` placeholder scheme is obsolete.
 - **Purchase flow:** available plots show a "Contact IABA" mailto/tel link with the plot
   ID prefilled. No forms, no payments, no e-commerce.
 
@@ -41,9 +45,11 @@ hash routing (`#/plot/A-12`) so plot pages work on a static host.
 `data/plots.geojson` — FeatureCollection of plot polygons. Feature properties:
 
 ```
-id: "A-12"          // placeholder; swappable for real Cook-Walden IDs
-row: "A", space: 12
+id: "14-B3"         // real IABA scheme: lot number + space code
+lot: 14, space: "B3"
 status: "occupied" | "reserved" | "available" | "unknown"
+                    // enum provisional: the layout legend has 5 colors, meanings
+                    // pending owner confirmation (docs/OPEN-QUESTIONS.md)
 person?: { name, dob?, dod?, notes? }   // only when occupied/reserved
 photos?: string[]   // future: marker photos from survey
 ```
