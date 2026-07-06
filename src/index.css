@@ -181,6 +181,26 @@ body {
   color: #fbbf24;
 }
 
+.panel .legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.panel .legend-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel .swatch {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #78716c;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
 @media (max-width: 700px) {
   .editor {
     flex-direction: column;

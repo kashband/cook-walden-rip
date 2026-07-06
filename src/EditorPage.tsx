@@ -22,26 +22,28 @@ import {
   TXGIO_ATTRIBUTION,
 } from "./config";
 import {
-  DEFAULT_GRID_PARAMS,
-  generateGrid,
-  cellsToGeoJSON,
-  type GridParams,
-} from "./grid";
+  DEFAULT_PLACEMENT,
+  placeLayout,
+  placedToGeoJSON,
+  DIAGRAM_COLORS,
+  STATUS_LABELS,
+  type PlacementParams,
+} from "./layout";
 
 const section = JSON.parse(sectionRaw) as GeoJSON.FeatureCollection;
-const STORAGE_KEY = "cw-editor-grid-params";
+const STORAGE_KEY = "cw-editor-placement";
 
-function loadParams(): GridParams {
+function loadParams(): PlacementParams {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return { ...DEFAULT_GRID_PARAMS, ...JSON.parse(raw) };
+    if (raw) return { ...DEFAULT_PLACEMENT, ...JSON.parse(raw) };
   } catch {
     /* corrupted storage — fall back to defaults */
   }
-  return DEFAULT_GRID_PARAMS;
+  return DEFAULT_PLACEMENT;
 }
 
-function OriginPicker({ active, onPick }: { active: boolean; onPick: (lat: number, lng: number) => void }) {
+function AnchorPicker({ active, onPick }: { active: boolean; onPick: (lat: number, lng: number) => void }) {
   useMapEvents({
     click(e) {
       if (active) onPick(e.latlng.lat, e.latlng.lng);
@@ -51,7 +53,7 @@ function OriginPicker({ active, onPick }: { active: boolean; onPick: (lat: numbe
 }
 
 export default function EditorPage() {
-  const [params, setParams] = useState<GridParams>(loadParams);
+  const [params, setParams] = useState<PlacementParams>(loadParams);
   const [picking, setPicking] = useState(false);
   const [nudgeStepM, setNudgeStepM] = useState(0.25);
 
@@ -59,24 +61,26 @@ export default function EditorPage() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
   }, [params]);
 
-  const cells = useMemo(() => generateGrid(params), [params]);
+  const placed = useMemo(() => placeLayout(params), [params]);
 
-  const set = (patch: Partial<GridParams>) => setParams((p) => ({ ...p, ...patch }));
+  const set = (patch: Partial<PlacementParams>) => setParams((p) => ({ ...p, ...patch }));
 
-  /** Move the origin relative to the grid: along the row bearing and across it. */
+  /** Move the anchor relative to the layout: along its rotated x-axis and y-axis. */
   const nudge = (alongM: number, acrossM: number) => {
-    const theta = (params.bearingDeg * Math.PI) / 180;
-    const eastM = alongM * Math.sin(theta) + acrossM * Math.sin(theta + Math.PI / 2);
-    const northM = alongM * Math.cos(theta) + acrossM * Math.cos(theta + Math.PI / 2);
-    const lat = params.origin.lat + northM / 111_320;
+    const theta = (params.rotationDeg * Math.PI) / 180;
+    // layout x-axis points to bearing 90+rot, y-axis to bearing 180+rot
+    const eastM =
+      alongM * Math.cos(theta) + acrossM * Math.sin(theta);
+    const northM = -alongM * Math.sin(theta) + acrossM * Math.cos(theta);
+    const lat = params.anchor.lat + northM / 111_320;
     const lng =
-      params.origin.lng + eastM / (111_320 * Math.cos((params.origin.lat * Math.PI) / 180));
-    set({ origin: { lat, lng } });
+      params.anchor.lng + eastM / (111_320 * Math.cos((params.anchor.lat * Math.PI) / 180));
+    set({ anchor: { lat, lng } });
   };
 
   const exportGeoJSON = () => {
-    const fc = cellsToGeoJSON(cells, params);
-    const blob = new Blob([JSON.stringify(fc, null, 2)], { type: "application/geo+json" });
+    const fc = placedToGeoJSON(placed, params);
+    const blob = new Blob([JSON.stringify(fc, null, 1)], { type: "application/geo+json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
     a.download = "plots.geojson";
@@ -89,7 +93,6 @@ export default function EditorPage() {
     value: number,
     onChange: (v: number) => void,
     step = 1,
-    min = 0,
   ) => (
     <label className="field">
       <span>{label}</span>
@@ -97,7 +100,6 @@ export default function EditorPage() {
         type="number"
         value={value}
         step={step}
-        min={min}
         onChange={(e) => onChange(Number(e.target.value))}
       />
     </label>
@@ -106,19 +108,20 @@ export default function EditorPage() {
   return (
     <div className="editor">
       <aside className="panel">
-        <h2>Grid generator</h2>
+        <h2>Layout placement</h2>
         <p className="hint">
-          Align the grid against visible grave rows (enable the 2019 detail layer), then export
-          and commit as <code>data/plots.geojson</code>.
+          The digitized IABA layout ({placed.length} spaces) is placed with one transform.
+          Align it against the 2019 detail layer, then export and commit as{" "}
+          <code>data/plots.geojson</code>.
         </p>
 
         <section>
-          <h3>Origin (corner of A-1)</h3>
+          <h3>Anchor (layout center)</h3>
           <button className={picking ? "active" : ""} onClick={() => setPicking((v) => !v)}>
-            {picking ? "Click the map… (esc: click again)" : "Set origin by clicking map"}
+            {picking ? "Click the map…" : "Set anchor by clicking map"}
           </button>
           <div className="readout">
-            {params.origin.lat.toFixed(6)}, {params.origin.lng.toFixed(6)}
+            {params.anchor.lat.toFixed(6)}, {params.anchor.lng.toFixed(6)}
           </div>
           <div className="nudge">
             <span>Nudge</span>
@@ -129,22 +132,25 @@ export default function EditorPage() {
               <option value={5}>5 m</option>
             </select>
             <div className="nudge-grid">
-              <button onClick={() => nudge(0, -nudgeStepM)} title="Up a row">▲</button>
+              <button onClick={() => nudge(0, -nudgeStepM)} title="Layout-up">▲</button>
               <div>
-                <button onClick={() => nudge(-nudgeStepM, 0)} title="Back along row">◀</button>
-                <button onClick={() => nudge(nudgeStepM, 0)} title="Forward along row">▶</button>
+                <button onClick={() => nudge(-nudgeStepM, 0)} title="Layout-left">◀</button>
+                <button onClick={() => nudge(nudgeStepM, 0)} title="Layout-right">▶</button>
               </div>
-              <button onClick={() => nudge(0, nudgeStepM)} title="Down a row">▼</button>
+              <button onClick={() => nudge(0, nudgeStepM)} title="Layout-down">▼</button>
             </div>
           </div>
         </section>
 
         <section>
-          <h3>Orientation</h3>
-          {num("Bearing (° along row)", params.bearingDeg, (v) => set({ bearingDeg: v }), 0.5)}
+          <h3>Rotation</h3>
+          {num("Rotation (° CW)", params.rotationDeg, (v) => set({ rotationDeg: v }), 0.5)}
           <div className="btn-row">
             {[-5, -1, -0.1, 0.1, 1, 5].map((d) => (
-              <button key={d} onClick={() => set({ bearingDeg: +(params.bearingDeg + d).toFixed(2) })}>
+              <button
+                key={d}
+                onClick={() => set({ rotationDeg: +(params.rotationDeg + d).toFixed(2) })}
+              >
                 {d > 0 ? `+${d}` : d}
               </button>
             ))}
@@ -152,25 +158,40 @@ export default function EditorPage() {
         </section>
 
         <section>
-          <h3>Layout</h3>
-          {num("Rows", params.rows, (v) => set({ rows: Math.max(1, Math.round(v)) }))}
-          {num("Spaces per row", params.cols, (v) => set({ cols: Math.max(1, Math.round(v)) }))}
-          {num("Plot width (m)", params.plotWidthM, (v) => set({ plotWidthM: v }), 0.05)}
-          {num("Plot length (m)", params.plotLengthM, (v) => set({ plotLengthM: v }), 0.05)}
-          {num("Gap in row (m)", params.colGapM, (v) => set({ colGapM: v }), 0.05)}
-          {num("Gap between rows (m)", params.rowGapM, (v) => set({ rowGapM: v }), 0.05)}
+          <h3>Scale</h3>
+          {num("Space width (m)", params.spaceWidthM, (v) => set({ spaceWidthM: v }), 0.05)}
+          {num("Space depth (m)", params.spaceDepthM, (v) => set({ spaceDepthM: v }), 0.05)}
         </section>
 
         <section>
-          <div className="readout">
-            {cells.length} plots &middot; footprint{" "}
-            {(params.cols * (params.plotWidthM + params.colGapM)).toFixed(1)} m ×{" "}
-            {(params.rows * (params.plotLengthM + params.rowGapM)).toFixed(1)} m
+          <h3>Legend (diagram colors)</h3>
+          <div className="legend">
+            {Object.entries(STATUS_LABELS).map(([status, label]) =>
+              status === "unknown" ? null : (
+                <div key={status} className="legend-row">
+                  <span
+                    className="swatch"
+                    style={{
+                      background:
+                        DIAGRAM_COLORS[
+                          { occupied: "red", reserved: "lightblue", available: "white", bohri: "gray", unusable: "green" }[
+                            status
+                          ] ?? "white"
+                        ],
+                    }}
+                  />
+                  {label}
+                </div>
+              ),
+            )}
           </div>
+        </section>
+
+        <section>
           <button className="primary" onClick={exportGeoJSON}>
             Export plots.geojson
           </button>
-          <button onClick={() => setParams(DEFAULT_GRID_PARAMS)}>Reset to defaults</button>
+          <button onClick={() => setParams(DEFAULT_PLACEMENT)}>Reset to defaults</button>
         </section>
 
         <a href="#/">&larr; Back to map</a>
@@ -202,24 +223,31 @@ export default function EditorPage() {
           data={section}
           style={{ color: "#fbbf24", weight: 1.5, dashArray: "6 4", fillOpacity: 0 }}
         />
-        <OriginPicker
+        <AnchorPicker
           active={picking}
           onPick={(lat, lng) => {
-            set({ origin: { lat, lng } });
+            set({ anchor: { lat, lng } });
             setPicking(false);
           }}
         />
-        {cells.map((cell) => (
+        {placed.map((s) => (
           <Polygon
-            key={cell.id}
-            positions={cell.corners}
-            pathOptions={{ color: "#38bdf8", weight: 1, fillOpacity: 0.05 }}
+            key={s.id}
+            positions={s.corners}
+            pathOptions={{
+              color: "#1c1917",
+              weight: 0.7,
+              fillColor: DIAGRAM_COLORS[s.color] ?? "#ffffff",
+              fillOpacity: 0.55,
+            }}
           >
-            <Tooltip sticky>{cell.id}</Tooltip>
+            <Tooltip sticky>
+              {s.id} · {STATUS_LABELS[s.status] ?? s.status}
+            </Tooltip>
           </Polygon>
         ))}
         <CircleMarker
-          center={[params.origin.lat, params.origin.lng]}
+          center={[params.anchor.lat, params.anchor.lng]}
           radius={5}
           pathOptions={{ color: "#ef4444", fillOpacity: 0.9 }}
         />
