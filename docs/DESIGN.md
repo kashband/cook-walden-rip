@@ -31,13 +31,22 @@ or by hand) and committing.
 
 - **Base layer: Esri World Imagery** (`https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}`).
   Free with attribution ("Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics…").
-  Resolution over Pflugerville is good enough to see grave rows.
+  Current-state imagery (~30 cm effective here): shows recent burials, but headstones
+  are soft blobs at plot zoom.
+- **Detail layer: TxGIO StratMap 2019 6-inch orthoimagery** (public domain, leaf-off).
+  A one-time high-res crop of the section was exported from the
+  `StratMap/StratMap19_NCCIR_CapArea` ImageServer and committed as
+  `public/imagery/iaba-2019-txgio.jpg`, rendered as a toggleable Leaflet ImageOverlay
+  pinned to its exact export bbox (see `TXGIO_OVERLAY_BOUNDS` in `src/config.ts`).
+  Individual grave markers are clearly visible — this is the alignment reference for
+  the grid editor. Caveat: it predates ~2019 burials, so it shows fewer graves than
+  the Esri layer; occupancy truth comes from the survey, not imagery.
+  (The StratMap21 flight does not cover this location; check newer CapArea flights
+  when TxGIO publishes them.)
 - **Do not use Google Maps/Earth tiles** — their license prohibits use outside Google's
   own APIs and prohibits this kind of overlay reuse.
-- **Fallback/verification:** TxGIO (TNRIS) publishes free high-res Texas orthoimagery;
-  useful for cross-checking alignment.
 - **Future upgrade:** a drone orthophoto of just the IABA section, georeferenced and
-  served as a Leaflet ImageOverlay on top of the Esri tiles.
+  served the same way as the TxGIO overlay.
 
 ## Grid generator (`/editor`)
 
@@ -55,8 +64,8 @@ Inputs (form + on-map interaction):
 
 Behavior:
 
-- Grid regenerates live as parameters change (`@turf/destination` from the origin along
-  the bearing for each cell corner)
+- Grid regenerates live as parameters change (flat-earth meter offsets in `src/grid.ts`
+  — accurate to sub-centimeter at this scale, no turf dependency needed)
 - Nudge controls: arrow-key/button offsets for origin, fine bearing adjustment, so the
   grid can be visually aligned against visible graves in the imagery
 - Cells get placeholder IDs (`A-1` … row letter + space number) at generation time
