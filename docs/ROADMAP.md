@@ -11,7 +11,7 @@ from `data/section.geojson` (initial boundary eyeballed from imagery is fine).
 **Done when:** `npm run dev` shows satellite imagery of the section with a visible
 boundary outline, on desktop and phone-sized viewports.
 
-## ☐ M2 — Grid generator
+## ◐ M2 — Grid generator (editor built 2026-07-05; real alignment pending)
 
 `/editor` dev route per docs/DESIGN.md: origin click, bearing, rows/cols, plot size,
 gaps; live regeneration; nudge controls; placeholder IDs; GeoJSON export.
