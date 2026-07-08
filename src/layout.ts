@@ -49,10 +49,11 @@ export interface PlacementParams {
   spaceDepthM: number;
 }
 
+/** Owner-calibrated placement (2026-07-07) — matches data/plots.geojson metadata. */
 export const DEFAULT_PLACEMENT: PlacementParams = {
-  anchor: { lat: 30.43730366645736, lng: -97.66220675345387 },
-  rotationDeg: 120,
-  spaceWidthM: 1.2,
+  anchor: { lat: 30.437268657968733, lng: -97.66220355069068 },
+  rotationDeg: 137,
+  spaceWidthM: 1.0,
   spaceDepthM: 3.0,
 };
 
@@ -119,12 +120,24 @@ export const DIAGRAM_COLORS: Record<string, string> = {
   green: "#9fce63",
 };
 
-/** Legend labels (diagram legend: Buried / Used / Vacant / Bohri / Tree-Bench). */
+/** Status → diagram color (owner-confirmed legend, 2026-07-07). */
+export const STATUS_COLORS: Record<string, string> = {
+  buried: "red",
+  occupied: "darkblue",
+  vacant: "lightblue",
+  unowned: "white",
+  bohri: "gray",
+  other: "darkgray",
+  unusable: "green",
+};
+
+/** Legend labels (owner-confirmed semantics, 2026-07-07). */
 export const STATUS_LABELS: Record<string, string> = {
-  occupied: "Occupied (buried/used)",
-  reserved: "Reserved (vacant)",
-  available: "Available",
-  bohri: "Bohra community",
-  unusable: "Unusable (tree/bench)",
-  unknown: "Unconfirmed (dark gray)",
+  buried: "Buried (not IABA)",
+  occupied: "Occupied — IABA community",
+  vacant: "Vacant — open for IABA community",
+  unowned: "Not IABA-owned",
+  bohri: "Bohri community",
+  other: "Other community (unconfirmed)",
+  unusable: "Tree / bench / unusable",
 };

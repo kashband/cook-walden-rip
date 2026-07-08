@@ -17,11 +17,11 @@ constraint (static site, deployable to GitHub Pages).
 - Section center coordinates: `30.43730366645736, -97.66220675345387`
 - **Official layout diagram in hand** (2026-07-05): `data/reference/IABA-Layout.pdf`
   (+ rendered PNG). 52 lots (01–36, 47–62; 37–46 don't exist) of up to 16 spaces each
-  (A1–A4/B1–B4 over C1–C4/D1–D4, 8 wide × 2 deep), color-coded by status. Rotate
-  ~120° clockwise to align with the ground. **Digitized** to
-  `data/reference/layout-spaces.json` (671 spaces, statuses + pixel geometry) by
-  `scripts/digitize_layout.py`. Person-level burial records still come from the
-  owner's survey.
+  (A1–A4/B1–B4 over C1–C4/D1–D4, 8 wide × 2 deep), color-coded by status. **Digitized**
+  to `data/reference/layout-spaces.json` (671 spaces, statuses + pixel geometry) by
+  `scripts/digitize_layout.py`, then **placed on the ground by the owner** (2026-07-07:
+  rotation 137° CW, 1.0 m × 3.0 m spaces) → `data/plots.geojson`. Person-level burial
+  records still come from the owner's survey.
 
 ## Locked decisions (2026-07-05, with project owner)
 
@@ -34,8 +34,10 @@ constraint (static site, deployable to GitHub Pages).
 - **Labeling (updated 2026-07-05):** the real IABA scheme from the layout diagram —
   lot number + space code, plot ID format `"14-B3"` (lot 14, space B3). The earlier
   `A-1` placeholder scheme is obsolete.
-- **Purchase flow:** available plots show a "Contact IABA" mailto/tel link with the plot
-  ID prefilled. No forms, no payments, no e-commerce.
+- **Purchase flow (updated 2026-07-07):** **vacant** plots (light blue — the
+  community's actual inventory; white spaces are NOT IABA-owned) show a "Contact IABA"
+  mailto link with the plot ID prefilled. No forms, no payments, no e-commerce.
+  Contact email is a placeholder (`src/config.ts`) until IABA provides the real one.
 
 ## Stack
 
@@ -49,10 +51,15 @@ hash routing (`#/plot/A-12`) so plot pages work on a static host.
 ```
 id: "14-B3"         // real IABA scheme: lot number + space code
 lot: 14, space: "B3"
-status: "occupied" | "reserved" | "available" | "bohri" | "unusable" | "unknown"
-                    // from the layout legend: red/darkblue=occupied, lightblue=reserved,
-                    // white=available, gray=bohri (Bohra community), green=unusable
-person?: { name, dob?, dod?, notes? }   // only when occupied/reserved
+status: "buried" | "occupied" | "vacant" | "unowned" | "bohri" | "other" | "unusable"
+                    // owner-confirmed (2026-07-07): red=buried (not IABA) ·
+                    // darkblue=occupied (IABA community, needs person labels) ·
+                    // lightblue=vacant (open for IABA community → contact link) ·
+                    // white=unowned (likely cemetery-available, not IABA's) ·
+                    // gray=bohri (adjacent community) · darkgray=other community
+                    // (unconfirmed) · green=tree/bench/obstacle
+color: "red" | ...  // original diagram color, kept alongside status
+person?: { name, dob?, dod?, notes? }   // only when occupied
 photos?: string[]   // future: marker photos from survey
 ```
 

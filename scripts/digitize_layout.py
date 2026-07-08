@@ -51,17 +51,19 @@ PALETTE = {
 ORANGE = (233, 113, 50)
 TAN = (248, 203, 173)  # walkway fill — must not classify as a status
 
-# Diagram color -> plot status (legend per owner, 2026-07-05).
+# Diagram color -> plot status (legend confirmed by owner, 2026-07-07):
+# red = buried, NOT IABA community · darkblue = used by IABA community ·
+# lightblue = vacant for IABA community · white = likely cemetery-available,
+# not IABA-owned · gray = Bohri (adjacent community) · darkgray = probably
+# another community (unconfirmed, similar to Bohri) · green = tree/bench/obstacle.
 # Legend counts: Buried 100 / Used 30 / Vacant 128 / Bohri 64 / Tree-Bench 22.
-# darkgray is NOT in the legend (its cells would break the Bohri=64 count):
-# meaning unconfirmed -> "unknown" until the owner clarifies.
 COLOR_TO_STATUS = {
-    "red": "occupied",
+    "red": "buried",
     "darkblue": "occupied",
-    "lightblue": "reserved",
-    "white": "available",
+    "lightblue": "vacant",
+    "white": "unowned",
     "gray": "bohri",
-    "darkgray": "unknown",
+    "darkgray": "other",
     "green": "unusable",
 }
 

@@ -4,21 +4,17 @@ Unknowns that need the project owner or IABA. **Do not invent answers to these**
 build around them (placeholder data, clearly marked) until resolved.
 
 ## Layout diagram (data/reference/IABA-Layout.pdf)
-- [ ] **Buried vs. Used** — the legend distinguishes dark red "Buried" from dark blue
-      "Used". Both currently map to `occupied`; confirm the practical difference.
-- [ ] **Unlabeled dark gray** — lots 31, 36 and halves of 30/35 (48 spaces) use a
-      darker gray (~RGB 165) that is NOT in the legend (Bohri gray ~189 covers exactly
-      the 64 spaces of lots 49/51/53/55). What do these lots mean? Currently
-      status `unknown`.
+- [ ] **Dark gray — which community?** Owner says "probably another community,
+      similar to Bohri" (lots 31, 36 and halves of 30/35, 48 spaces). Confirm who,
+      so status `other` can get a proper name.
 - [ ] **Vacant count off by one** — the legend says Vacant (128), but the diagram
       contains 129 decisively light-blue spaces. Likely a stale hand tally in the
       source doc; confirm with IABA which space changed.
+- [ ] **Vacant plot details** — owner: vacant spaces "should have some details around
+      it". What details? (pricing? eligibility? reservation process?)
 - [ ] Lots 59–62 are drawn dashed — future/unbuilt lots? Lot 58 is partial.
-- [ ] Exact rotation: owner says ~120° clockwise aligns the diagram with the ground;
-      calibrate precisely in the editor against the 2019 imagery.
 - [ ] How current is the diagram (as-of date?), and who maintains the authoritative
       copy — will IABA share updates as plots sell?
-- [ ] Physical space dimensions (assumed ~1.2 m × 3.0 m; the diagram has no scale bar).
 
 ## Section geometry
 - [ ] Exact boundary of the IABA-owned section — we have a center coordinate, not
@@ -26,8 +22,8 @@ build around them (placeholder data, clearly marked) until resolved.
       paperwork later.
 
 ## Records
-- [ ] Which spaces map to which *people* (names/dates for occupied plots) — the layout
-      diagram has statuses only; person data still needs records or the field survey.
+- [ ] Which spaces map to which *people* — owner confirms dark-blue (occupied)
+      spaces "need to be labelled"; names/dates come from records or the field survey.
 
 ## Contact & pitch
 - [ ] Correct IABA contact (email/phone) for the "Contact IABA about this plot" link.
@@ -54,3 +50,13 @@ build around them (placeholder data, clearly marked) until resolved.
   lots), green = tree/bench/unusable. Lot count corrected: 52 lots (01–36, 47–62);
   37–46 don't exist. Digitized: 671 spaces in data/reference/layout-spaces.json
   (278 available / 177 reserved / 130 occupied / 64 bohri / 22 unusable).
+- 2026-07-07 — **Status semantics refined by owner**: red = buried, NOT IABA community
+  · dark blue = used by IABA community (needs person labels) · light blue = vacant for
+  IABA community (the actual inventory — contact link goes here) · white = likely
+  cemetery-available but not IABA-owned · light gray = Bohri (adjacent community) ·
+  dark gray = probably another community (unconfirmed) · green = obstacles between
+  graves. Statuses renamed accordingly: buried/occupied/vacant/unowned/bohri/other/
+  unusable. Resolves "Buried vs Used" and (mostly) the dark-gray question.
+- 2026-07-07 — **Placement calibrated by owner** in the editor: rotation 137° CW,
+  1.0 m × 3.0 m spaces, anchor 30.437269, -97.662204 → data/plots.geojson (M2 done).
+  Resolves exact rotation and space dimensions.

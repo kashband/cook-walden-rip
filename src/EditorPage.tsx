@@ -26,6 +26,7 @@ import {
   placeLayout,
   placedToGeoJSON,
   DIAGRAM_COLORS,
+  STATUS_COLORS,
   STATUS_LABELS,
   type PlacementParams,
 } from "./layout";
@@ -170,19 +171,7 @@ export default function EditorPage() {
               <div key={status} className="legend-row">
                 <span
                   className="swatch"
-                  style={{
-                    background:
-                      DIAGRAM_COLORS[
-                        {
-                          occupied: "red",
-                          reserved: "lightblue",
-                          available: "white",
-                          bohri: "gray",
-                          unusable: "green",
-                          unknown: "darkgray",
-                        }[status] ?? "white"
-                      ],
-                  }}
+                  style={{ background: DIAGRAM_COLORS[STATUS_COLORS[status]] ?? "#ffffff" }}
                 />
                 {label}
               </div>
