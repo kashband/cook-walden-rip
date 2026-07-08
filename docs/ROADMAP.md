@@ -11,18 +11,15 @@ from `data/section.geojson` (initial boundary eyeballed from imagery is fine).
 **Done when:** `npm run dev` shows satellite imagery of the section with a visible
 boundary outline, on desktop and phone-sized viewports.
 
-## ◐ M2 — Grid generator (editor built 2026-07-05; lot-based rework + alignment pending)
+## ☑ M2 — Grid generator (2026-07-07)
 
-`/editor` dev route per docs/DESIGN.md: origin click, bearing, plot size, gaps; live
-regeneration; nudge controls; GeoJSON export.
+`/editor` dev route places the digitized layout with one similarity transform: anchor
+lat/lng, rotation, space width/depth in meters (diagram px→m scale); nudge controls;
+GeoJSON export. (Parametric generation was made obsolete by M2.5.)
 
-**Rework (2026-07-05):** the real layout is lot-based, and M2.5 produced exact
-per-space pixel geometry — so parametric generation is obsolete. Instead, the editor
-places the whole digitized layout with one similarity transform: anchor lat/lng,
-rotation (~120° CW per owner), and space width/depth in meters (diagram px→m scale).
-
-**Done when:** the transformed layout visually aligns with grave rows in the imagery
-and exports to `data/plots.geojson` with real IDs + statuses.
+**Done (2026-07-07):** owner aligned the layout on the map (rotation 137° CW,
+1.0 m × 3.0 m spaces) and exported `data/plots.geojson` (671 plots); transform params
+kept in the file's metadata. Editor defaults now match the calibration.
 
 ## ☑ M2.5 — Digitize the layout diagram (2026-07-05)
 
@@ -30,23 +27,25 @@ and exports to `data/plots.geojson` with real IDs + statuses.
 (lot labels located by color, frames measured from solid borders, partial lots
 whitelisted) → `data/reference/layout-spaces.json`: 671 spaces with statuses + pixel
 rects. QA overlay verified against the original; zero unclassified cells.
-Counts: 278 available / 177 reserved / 130 occupied / 64 bohri / 22 unusable.
+Counts (owner-confirmed statuses, 2026-07-07): 278 unowned / 129 vacant / 100 buried /
+64 bohri / 48 other / 30 occupied / 22 unusable.
 
-## ☐ M3 — Plot layer
+## ☑ M3 — Plot layer (2026-07-07)
 
-Visitor map renders `plots.geojson` color-coded by status, with legend and hover
-tooltips (ID + name). Seed the file with plausible demo statuses, clearly fake names.
+Visitor map renders `plots.geojson` color-coded by status (diagram colors), with an
+always-visible legend (status + count) and hover tooltips (ID + status).
 
-**Done when:** all four statuses are visibly distinguishable at section zoom and the
-legend matches.
+**Done:** all seven statuses distinguishable at section zoom; legend matches the data.
 
-## ☐ M4 — Plot detail
+## ☑ M4 — Plot detail (2026-07-07)
 
-`#/plot/<id>` routes; detail panel (desktop sidebar / mobile bottom sheet); status
-badge, person info, prefilled "Contact IABA" mailto for available plots.
+`#/plot/<id>` routes; detail sidebar (desktop) / bottom sheet (mobile); status badge,
+per-status explanation, person info when present, prefilled "Contact IABA" mailto on
+**vacant** plots (the community's actual inventory — white "available" spaces turned
+out not to be IABA-owned). Contact email is a placeholder pending the real one.
 
-**Done when:** clicking any plot opens its detail, the URL is shareable (reload lands
-on the same plot), and an available plot's contact link opens a prefilled email.
+**Done:** clicking any plot flies to it and opens its detail; the URL is shareable
+(reload lands on the same plot); a vacant plot's contact link opens a prefilled email.
 
 ## ☐ M5 — Survey pass (field work + data entry)
 

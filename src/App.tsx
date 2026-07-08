@@ -6,6 +6,9 @@ import "leaflet/dist/leaflet.css";
 export default function App() {
   const route = useHashRoute();
   const isEditor = route.startsWith("/editor");
+  const plotId = route.startsWith("/plot/")
+    ? decodeURIComponent(route.slice("/plot/".length))
+    : undefined;
 
   return (
     <div className="app">
@@ -18,7 +21,7 @@ export default function App() {
           </a>
         )}
       </header>
-      {isEditor ? <EditorPage /> : <VisitorMap />}
+      {isEditor ? <EditorPage /> : <VisitorMap selectedId={plotId} />}
     </div>
   );
 }

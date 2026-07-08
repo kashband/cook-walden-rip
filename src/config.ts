@@ -24,3 +24,9 @@ export const TXGIO_OVERLAY_BOUNDS: [[number, number], [number, number]] = [
   [30.43825, -97.6611],
 ];
 export const TXGIO_ATTRIBUTION = "2019 imagery: TxGIO StratMap";
+
+/**
+ * Placeholder — real IABA contact still unconfirmed (docs/OPEN-QUESTIONS.md).
+ * The .example TLD makes it obviously fake in the demo.
+ */
+export const IABA_CONTACT_EMAIL = "plots@iaba.example";

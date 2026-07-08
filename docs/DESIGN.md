@@ -58,13 +58,15 @@ dashed (likely future). The diagram is rotated relative to the ground: ~120° cl
 brings it into alignment. This document is the source of truth for IDs and statuses;
 imagery is only for georeferencing, and the field survey adds person data.
 
-Legend (legible render obtained 2026-07-06, with counts): dark red = **Buried** (100)
-· dark blue = **Used** (30) · light blue = **Vacant** (128*) · gray = **Bohri** (64,
-another community's lots) · green = **Tree/Bench/Unusable** (22) · white = available.
-Both blues map to `occupied`, light blue to `reserved`. *The diagram actually contains
-129 light-blue spaces — legend tally likely stale. A second, darker gray (48 spaces in
-lots 30/31/35/36) is not in the legend → status `unknown` (docs/OPEN-QUESTIONS.md).
-`scripts/digitize_layout.py export` validates per-color counts against the legend.
+Legend (owner-confirmed semantics, 2026-07-07; counts from the legible legend render):
+dark red = **buried**, not IABA community (100) · dark blue = **occupied** by IABA
+community, needs person labels (30) · light blue = **vacant** for IABA community —
+the actual inventory (128*) · white = **unowned**, likely cemetery-available but not
+IABA's (278) · gray = **bohri**, adjacent community (64) · dark gray = **other**
+community, unconfirmed (48, not in the legend) · green = **unusable** obstacles
+between graves (22). *The diagram actually contains 129 light-blue spaces — legend
+tally likely stale (docs/OPEN-QUESTIONS.md). `scripts/digitize_layout.py export`
+validates per-color counts against the legend.
 
 **Digitized** by `scripts/digitize_layout.py` (labels stage → cells QA stage →
 export): finds the 52 orange lot labels, measures the 560×206 px lot frames from
@@ -105,27 +107,32 @@ visitors never see it.
 ## Visitor-facing map
 
 - Opens centered/zoomed on the IABA section, section boundary outlined
-- Plot polygons color-coded by status:
+- Plot polygons color-coded by status, reusing the official diagram's colors so the
+  map reads as "the IABA layout, live on the ground":
 
-  | Status    | Color                | Meaning                          |
-  |-----------|----------------------|----------------------------------|
-  | occupied  | slate/gray           | burial present                   |
-  | reserved  | amber                | claimed, not yet used            |
-  | available | green                | open — inquiry link shown        |
-  | unknown   | translucent/hatched  | not yet surveyed                 |
+  | Status    | Diagram color | Meaning                                    |
+  |-----------|---------------|--------------------------------------------|
+  | buried    | dark red      | burial present, not IABA community         |
+  | occupied  | dark blue     | IABA community burial (person data TBD)    |
+  | vacant    | light blue    | open for IABA community — inquiry link     |
+  | unowned   | white         | not IABA-owned (likely cemetery inventory) |
+  | bohri     | light gray    | adjacent Bohri community                   |
+  | other     | dark gray     | probably another community (unconfirmed)   |
+  | unusable  | green         | tree / bench / obstacle                    |
 
-- Legend always visible; hover (desktop) shows plot ID + name tooltip
-- Click/tap → plot detail
+- Legend always visible (status + count); hover shows plot ID + status tooltip
+- Click/tap → flies to the plot and opens its detail panel
 
 ## Plot detail view
 
-Sidebar panel on desktop, bottom sheet on mobile, addressable as `#/plot/A-12`.
+Sidebar panel on desktop, bottom sheet on mobile, addressable as `#/plot/14-B3`.
 
-- Plot ID, row/space, status badge
-- **Occupied/reserved:** person name, dates (dob/dod), optional notes; photos later
-- **Available:** "Contact IABA about this plot" — `mailto:` (and optionally `tel:`) link
-  with subject/body prefilled with the plot ID. No forms, no payments.
-- **Unknown:** "Not yet surveyed" message
+- Plot ID, lot/space, status badge, per-status explanation copy
+- **Occupied:** person name, dates (dob/dod), optional notes when present; photos later
+- **Vacant:** "Contact IABA about this plot" — `mailto:` link with subject/body
+  prefilled with the plot ID (email placeholder until IABA provides the real contact).
+  No forms, no payments.
+- All statuses carry a "demo data" disclaimer
 
 ## Search
 
