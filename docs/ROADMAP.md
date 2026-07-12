@@ -64,5 +64,11 @@ Client-side search over deceased names / owners / plot IDs (pan/zoom to result);
 GitHub Pages deployment via Actions (`.github/workflows/deploy.yml`, Vite
 `base: "./"`); attribution and "demo data" disclaimers were in place since M3/M4.
 
-**Done when:** a public URL loads the map cold on a phone, search finds a known plot,
-and total hosting cost is $0.
+**Done (2026-07-12):** live at **https://kashband.github.io/cook-walden-rip/**
+($0 hosting). Search finds known plots; deep links like `#/plot/59-D4` load cold.
+
+One-time setup gotcha: the workflow's `GITHUB_TOKEN` can't create the Pages site
+(`configure-pages` with `enablement: true` → "Resource not accessible by
+integration"), even on a public repo. The site was created once out-of-band
+(`gh api repos/<owner>/<repo>/pages -X POST -f build_type=workflow`); after that
+the workflow deploys on every push to `main` with no special enablement flag.
