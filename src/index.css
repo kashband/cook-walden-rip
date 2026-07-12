@@ -140,6 +140,13 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+.plot-panel .owner-label {
+  color: #a8a29e;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .plot-panel .contact {
   display: block;
   text-align: center;

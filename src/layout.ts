@@ -131,11 +131,11 @@ export const STATUS_COLORS: Record<string, string> = {
   unusable: "green",
 };
 
-/** Legend labels (owner-confirmed semantics, 2026-07-07). */
+/** Legend labels (owner-confirmed semantics, 2026-07-07/12). */
 export const STATUS_LABELS: Record<string, string> = {
-  buried: "Buried (not IABA)",
+  buried: "Buried",
   occupied: "Occupied — IABA community",
-  vacant: "Vacant — open for IABA community",
+  vacant: "Vacant — member-owned",
   unowned: "Not IABA-owned",
   bohri: "Bohri community",
   other: "Other community (unconfirmed)",

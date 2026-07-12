@@ -6,9 +6,8 @@ import plotsRaw from "../data/plots.geojson?raw";
 
 export interface PlotPerson {
   name: string;
-  dob?: string;
-  dod?: string;
-  notes?: string;
+  /** Burial date, ISO (from IABA records). */
+  burial?: string;
 }
 
 export interface Plot {
@@ -17,6 +16,8 @@ export interface Plot {
   space: string;
   status: string;
   color: string;
+  /** Deed holder — published for vacant plots only. */
+  owner?: string;
   person?: PlotPerson;
   /** Ring of [lat, lng] corners (not closed). */
   corners: [number, number][];
