@@ -1192,7 +1192,11 @@
     "lot": 4,
     "space": "A2",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "YUSUFALI, Mohamedraza",
+     "burial": "2004-03-24"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -1266,7 +1270,11 @@
     "lot": 4,
     "space": "A4",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "VAFAEE, Hossein",
+     "burial": "2004-02-04"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -1303,7 +1311,11 @@
     "lot": 4,
     "space": "B1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "VAFAEE, Abdolreza",
+     "burial": "2016-06-16"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -1377,7 +1389,8 @@
     "lot": 4,
     "space": "C2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "YUSUFALI, Hasnain"
    },
    "geometry": {
     "type": "Polygon",
@@ -1414,7 +1427,8 @@
     "lot": 4,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "YUSUFALI, Hasnain"
    },
    "geometry": {
     "type": "Polygon",
@@ -1451,7 +1465,11 @@
     "lot": 4,
     "space": "C4",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "DEWJI, Mansura",
+     "burial": "2009-08-25"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -1488,7 +1506,11 @@
     "lot": 4,
     "space": "D1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "SANAEE, Zeinab",
+     "burial": "2016-09-26"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -1525,7 +1547,8 @@
     "lot": 5,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "MERALI, Taha"
    },
    "geometry": {
     "type": "Polygon",
@@ -1562,7 +1585,8 @@
     "lot": 5,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "MERALI, Taha"
    },
    "geometry": {
     "type": "Polygon",
@@ -1747,7 +1771,8 @@
     "lot": 5,
     "space": "B3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "DEWJI, Bashir"
    },
    "geometry": {
     "type": "Polygon",
@@ -1784,7 +1809,11 @@
     "lot": 5,
     "space": "B4",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "DEWJI, Alizain",
+     "burial": "2002-08-12"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -1821,7 +1850,8 @@
     "lot": 5,
     "space": "C1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "JUMA, Kumeil"
    },
    "geometry": {
     "type": "Polygon",
@@ -2080,7 +2110,11 @@
     "lot": 6,
     "space": "C3",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "SHAFIGHI, Zeenat",
+     "burial": "2006-03-11"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -2117,7 +2151,11 @@
     "lot": 6,
     "space": "C4",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "SHAFIGHI, Mohamed",
+     "burial": "2007-04-05"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -2154,7 +2192,8 @@
     "lot": 6,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BANDALI, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -2191,7 +2230,8 @@
     "lot": 6,
     "space": "D2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BANDALI, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -3042,7 +3082,8 @@
     "lot": 8,
     "space": "B1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SHERAZE, Mohamed"
    },
    "geometry": {
     "type": "Polygon",
@@ -3264,7 +3305,8 @@
     "lot": 9,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "YUSUFALI, Jabir"
    },
    "geometry": {
     "type": "Polygon",
@@ -3301,7 +3343,8 @@
     "lot": 9,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "YUSUFALI, Munaver"
    },
    "geometry": {
     "type": "Polygon",
@@ -3338,7 +3381,8 @@
     "lot": 9,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "YUSUFALI, Munaver"
    },
    "geometry": {
     "type": "Polygon",
@@ -3856,7 +3900,8 @@
     "lot": 10,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AZIZ, Nazim"
    },
    "geometry": {
     "type": "Polygon",
@@ -3893,7 +3938,8 @@
     "lot": 10,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AZIZ, Nazim"
    },
    "geometry": {
     "type": "Polygon",
@@ -3930,7 +3976,8 @@
     "lot": 10,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "DAVOUDIH, Maryam"
    },
    "geometry": {
     "type": "Polygon",
@@ -3967,7 +4014,8 @@
     "lot": 10,
     "space": "A4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "DAVOUDIH, Maryam"
    },
    "geometry": {
     "type": "Polygon",
@@ -4004,7 +4052,8 @@
     "lot": 10,
     "space": "B1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AGHILI, Reza"
    },
    "geometry": {
     "type": "Polygon",
@@ -4041,7 +4090,8 @@
     "lot": 10,
     "space": "B2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AGHILI, Reza"
    },
    "geometry": {
     "type": "Polygon",
@@ -4078,7 +4128,8 @@
     "lot": 10,
     "space": "B3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AGHILI, Reza"
    },
    "geometry": {
     "type": "Polygon",
@@ -4115,7 +4166,8 @@
     "lot": 10,
     "space": "B4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "YUSUFALI, Jabir"
    },
    "geometry": {
     "type": "Polygon",
@@ -4374,7 +4426,8 @@
     "lot": 10,
     "space": "D3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "DAFTARIAN, Mehdi"
    },
    "geometry": {
     "type": "Polygon",
@@ -4411,7 +4464,8 @@
     "lot": 10,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AKHTAR, Ali"
    },
    "geometry": {
     "type": "Polygon",
@@ -4596,7 +4650,8 @@
     "lot": 12,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PLEUTHNER, Asad"
    },
    "geometry": {
     "type": "Polygon",
@@ -4633,7 +4688,8 @@
     "lot": 12,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PLEUTHNER, Asad"
    },
    "geometry": {
     "type": "Polygon",
@@ -4670,7 +4726,8 @@
     "lot": 12,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PLEUTHNER, Asad"
    },
    "geometry": {
     "type": "Polygon",
@@ -4707,7 +4764,8 @@
     "lot": 12,
     "space": "A4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PLEUTHNER, Asad"
    },
    "geometry": {
     "type": "Polygon",
@@ -4892,7 +4950,8 @@
     "lot": 12,
     "space": "C1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PLEUTHNER, Asad"
    },
    "geometry": {
     "type": "Polygon",
@@ -4929,7 +4988,8 @@
     "lot": 12,
     "space": "C2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PLEUTHNER, Asad"
    },
    "geometry": {
     "type": "Polygon",
@@ -4966,7 +5026,8 @@
     "lot": 12,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PLEUTHNER, Asad"
    },
    "geometry": {
     "type": "Polygon",
@@ -5003,7 +5064,8 @@
     "lot": 12,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PLEUTHNER, Asad"
    },
    "geometry": {
     "type": "Polygon",
@@ -5188,7 +5250,8 @@
     "lot": 13,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KAZMI, Iffat"
    },
    "geometry": {
     "type": "Polygon",
@@ -5225,7 +5288,11 @@
     "lot": 13,
     "space": "A2",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "RAZVI, Zakaria Begum",
+     "burial": "2017-08-14"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -5373,7 +5440,11 @@
     "lot": 13,
     "space": "C1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "RAZVI, Javed",
+     "burial": "2017-07-24"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -5410,7 +5481,11 @@
     "lot": 13,
     "space": "C2",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "KAZMI, Mehbub",
+     "burial": "2018-06-03"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -6150,7 +6225,8 @@
     "lot": 15,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6187,7 +6263,8 @@
     "lot": 15,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6224,7 +6301,8 @@
     "lot": 15,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6260,8 +6338,12 @@
     "id": "15-A4",
     "lot": 15,
     "space": "A4",
-    "status": "vacant",
-    "color": "lightblue"
+    "status": "occupied",
+    "color": "darkblue",
+    "person": {
+     "name": "RIZVI, Syed Iqbal Hussein",
+     "burial": "2025-10-28"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -6298,7 +6380,11 @@
     "lot": 15,
     "space": "B1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "HUSSEIN, Hussein Karim",
+     "burial": "2020-06-28"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -6334,8 +6420,12 @@
     "id": "15-B2",
     "lot": 15,
     "space": "B2",
-    "status": "vacant",
-    "color": "lightblue"
+    "status": "occupied",
+    "color": "darkblue",
+    "person": {
+     "name": "BARZEGARFAR, Masoomeh",
+     "burial": "2025-07-10"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -6372,7 +6462,8 @@
     "lot": 15,
     "space": "B3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AKHTAR, Syed Hasan"
    },
    "geometry": {
     "type": "Polygon",
@@ -6409,7 +6500,8 @@
     "lot": 15,
     "space": "B4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AKHTAR, Syed Hasan"
    },
    "geometry": {
     "type": "Polygon",
@@ -6446,7 +6538,8 @@
     "lot": 15,
     "space": "C1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6483,7 +6576,8 @@
     "lot": 15,
     "space": "C2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6520,7 +6614,8 @@
     "lot": 15,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6557,7 +6652,8 @@
     "lot": 15,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6594,7 +6690,8 @@
     "lot": 15,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6631,7 +6728,8 @@
     "lot": 15,
     "space": "D2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "FARAJI, Hassan"
    },
    "geometry": {
     "type": "Polygon",
@@ -6668,7 +6766,8 @@
     "lot": 15,
     "space": "D3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AKHTAR, Syed Hasan"
    },
    "geometry": {
     "type": "Polygon",
@@ -6705,7 +6804,8 @@
     "lot": 15,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AKHTAR, Syed Hasan"
    },
    "geometry": {
     "type": "Polygon",
@@ -6742,7 +6842,8 @@
     "lot": 16,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6779,7 +6880,8 @@
     "lot": 16,
     "space": "A4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6816,7 +6918,8 @@
     "lot": 16,
     "space": "B1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6853,7 +6956,8 @@
     "lot": 16,
     "space": "B2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6890,7 +6994,8 @@
     "lot": 16,
     "space": "B3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6927,7 +7032,8 @@
     "lot": 16,
     "space": "B4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -6964,7 +7070,8 @@
     "lot": 16,
     "space": "C1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Mohsin"
    },
    "geometry": {
     "type": "Polygon",
@@ -7001,7 +7108,8 @@
     "lot": 16,
     "space": "C2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Mohsin"
    },
    "geometry": {
     "type": "Polygon",
@@ -7038,7 +7146,8 @@
     "lot": 16,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Mohsin"
    },
    "geometry": {
     "type": "Polygon",
@@ -7075,7 +7184,8 @@
     "lot": 16,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Mohsin"
    },
    "geometry": {
     "type": "Polygon",
@@ -7112,7 +7222,8 @@
     "lot": 16,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Mohsin"
    },
    "geometry": {
     "type": "Polygon",
@@ -7149,7 +7260,8 @@
     "lot": 16,
     "space": "D2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Mohsin"
    },
    "geometry": {
     "type": "Polygon",
@@ -7186,7 +7298,8 @@
     "lot": 16,
     "space": "D3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Mohsin"
    },
    "geometry": {
     "type": "Polygon",
@@ -7223,7 +7336,8 @@
     "lot": 16,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KHATAW, Mohsin"
    },
    "geometry": {
     "type": "Polygon",
@@ -8037,7 +8151,11 @@
     "lot": 18,
     "space": "C1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "MOADDEB, Javad",
+     "burial": "2016-02-05"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -8074,7 +8192,11 @@
     "lot": 18,
     "space": "C2",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "ASKARIAN, Nahid",
+     "burial": "2019-10-18"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -8185,7 +8307,11 @@
     "lot": 18,
     "space": "D1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "HELFOROUSH, Mohammad Ali",
+     "burial": "2012-01-15"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -9406,7 +9532,11 @@
     "lot": 21,
     "space": "A1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "QASIM, Yasmin",
+     "burial": "2012-07-25"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -9961,7 +10091,11 @@
     "lot": 21,
     "space": "D4",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "LALPOUSH, Saeed",
+     "burial": "2008-07-04"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -10664,7 +10798,11 @@
     "lot": 23,
     "space": "A3",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "JABER, Majid",
+     "burial": "2012-03-08"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -10774,8 +10912,12 @@
     "id": "24-A1",
     "lot": 24,
     "space": "A1",
-    "status": "vacant",
-    "color": "lightblue"
+    "status": "occupied",
+    "color": "darkblue",
+    "person": {
+     "name": "KAZMI, Saeed",
+     "burial": "2025-01-04"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -10812,7 +10954,8 @@
     "lot": 24,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KAZMI, Saeed"
    },
    "geometry": {
     "type": "Polygon",
@@ -10849,7 +10992,11 @@
     "lot": 24,
     "space": "A3",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "RAZA, Amna",
+     "burial": "2009-05-05"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -11071,7 +11218,8 @@
     "lot": 24,
     "space": "C1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "HASSAN, Syed Mujahid"
    },
    "geometry": {
     "type": "Polygon",
@@ -11108,7 +11256,8 @@
     "lot": 24,
     "space": "C2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "HASSAN, Syed Mujahid"
    },
    "geometry": {
     "type": "Polygon",
@@ -11145,7 +11294,8 @@
     "lot": 24,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "RIZVI, Alley Raza"
    },
    "geometry": {
     "type": "Polygon",
@@ -11182,7 +11332,8 @@
     "lot": 24,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BARATI, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -11219,7 +11370,8 @@
     "lot": 24,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "YASSINE, Abdullah"
    },
    "geometry": {
     "type": "Polygon",
@@ -11256,7 +11408,8 @@
     "lot": 24,
     "space": "D2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "YASSINE, Abdullah"
    },
    "geometry": {
     "type": "Polygon",
@@ -11293,7 +11446,8 @@
     "lot": 24,
     "space": "D3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AWADAH, Faisal"
    },
    "geometry": {
     "type": "Polygon",
@@ -11330,7 +11484,8 @@
     "lot": 24,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "AWADAH, Faisal"
    },
    "geometry": {
     "type": "Polygon",
@@ -11552,7 +11707,8 @@
     "lot": 25,
     "space": "C1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "ABBAS, Mohamed"
    },
    "geometry": {
     "type": "Polygon",
@@ -11589,7 +11745,8 @@
     "lot": 25,
     "space": "C2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "ABBAS, Mohamed"
    },
    "geometry": {
     "type": "Polygon",
@@ -11626,7 +11783,8 @@
     "lot": 25,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "HAIDER, Mumnoon"
    },
    "geometry": {
     "type": "Polygon",
@@ -11663,7 +11821,8 @@
     "lot": 25,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "HAIDER, Mumnoon"
    },
    "geometry": {
     "type": "Polygon",
@@ -11700,7 +11859,8 @@
     "lot": 25,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SHERIFF, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -11737,7 +11897,8 @@
     "lot": 25,
     "space": "D2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SHERIFF, Aliraza"
    },
    "geometry": {
     "type": "Polygon",
@@ -11774,7 +11935,8 @@
     "lot": 25,
     "space": "D3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "HEMANI, Alireza"
    },
    "geometry": {
     "type": "Polygon",
@@ -11811,7 +11973,8 @@
     "lot": 25,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SHIRAZEE, Farhaneh"
    },
    "geometry": {
     "type": "Polygon",
@@ -12440,7 +12603,8 @@
     "lot": 27,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PANJU, Shiraz"
    },
    "geometry": {
     "type": "Polygon",
@@ -12477,7 +12641,8 @@
     "lot": 27,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PANJU, Shiraz"
    },
    "geometry": {
     "type": "Polygon",
@@ -12810,7 +12975,8 @@
     "lot": 27,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KAZMI, Zain"
    },
    "geometry": {
     "type": "Polygon",
@@ -12847,7 +13013,8 @@
     "lot": 27,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "KAZMI, Zain"
    },
    "geometry": {
     "type": "Polygon",
@@ -13032,7 +13199,8 @@
     "lot": 28,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BASRAVI, Navaz"
    },
    "geometry": {
     "type": "Polygon",
@@ -13069,7 +13237,8 @@
     "lot": 28,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BASRAVI, Navaz"
    },
    "geometry": {
     "type": "Polygon",
@@ -13106,7 +13275,8 @@
     "lot": 28,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BASRAVI, Navaz"
    },
    "geometry": {
     "type": "Polygon",
@@ -13143,7 +13313,8 @@
     "lot": 28,
     "space": "A4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BASRAVI, Navaz"
    },
    "geometry": {
     "type": "Polygon",
@@ -13180,7 +13351,8 @@
     "lot": 28,
     "space": "B1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "MUJTABA, Hasnain"
    },
    "geometry": {
     "type": "Polygon",
@@ -13217,7 +13389,8 @@
     "lot": 28,
     "space": "B2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "MUJTABA, Hasnain"
    },
    "geometry": {
     "type": "Polygon",
@@ -13254,7 +13427,8 @@
     "lot": 28,
     "space": "B3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SYED, Husnain"
    },
    "geometry": {
     "type": "Polygon",
@@ -13291,7 +13465,8 @@
     "lot": 28,
     "space": "B4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SYED, Husnain"
    },
    "geometry": {
     "type": "Polygon",
@@ -13328,7 +13503,8 @@
     "lot": 28,
     "space": "C1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "IABA -> BAHRAMI"
    },
    "geometry": {
     "type": "Polygon",
@@ -13365,7 +13541,8 @@
     "lot": 28,
     "space": "C2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "IABA -> BAHRAMI"
    },
    "geometry": {
     "type": "Polygon",
@@ -13401,8 +13578,12 @@
     "id": "28-C3",
     "lot": 28,
     "space": "C3",
-    "status": "vacant",
-    "color": "lightblue"
+    "status": "occupied",
+    "color": "darkblue",
+    "person": {
+     "name": "BAHRAMI, Sultan Ali",
+     "burial": "2025-07-03"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -13439,7 +13620,8 @@
     "lot": 28,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "IABA -> BAHRAMI"
    },
    "geometry": {
     "type": "Polygon",
@@ -13476,7 +13658,8 @@
     "lot": 28,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "JANMOHAMED, Aarif"
    },
    "geometry": {
     "type": "Polygon",
@@ -13513,7 +13696,8 @@
     "lot": 28,
     "space": "D2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "JANMOHAMED, Aarif"
    },
    "geometry": {
     "type": "Polygon",
@@ -13550,7 +13734,8 @@
     "lot": 28,
     "space": "D3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "JANMOHAMED, Raza"
    },
    "geometry": {
     "type": "Polygon",
@@ -13587,7 +13772,8 @@
     "lot": 28,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "JANMOHAMED, Raza"
    },
    "geometry": {
     "type": "Polygon",
@@ -13624,7 +13810,8 @@
     "lot": 29,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PERVAIZ, Syed"
    },
    "geometry": {
     "type": "Polygon",
@@ -13661,7 +13848,8 @@
     "lot": 29,
     "space": "A4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PERVAIZ, Syed"
    },
    "geometry": {
     "type": "Polygon",
@@ -13698,7 +13886,8 @@
     "lot": 29,
     "space": "B1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "PERVAIZ, Syed"
    },
    "geometry": {
     "type": "Polygon",
@@ -13735,7 +13924,11 @@
     "lot": 29,
     "space": "B2",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "DAWOODALY, Mohamedali",
+     "burial": "2023-07-09"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -13772,7 +13965,8 @@
     "lot": 29,
     "space": "B3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "DAWOODALI, Fauzia"
    },
    "geometry": {
     "type": "Polygon",
@@ -13809,7 +14003,11 @@
     "lot": 29,
     "space": "B4",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "BANO, Nargis",
+     "burial": "2023-06-22"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -13846,7 +14044,11 @@
     "lot": 29,
     "space": "C1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "QURBAN, Zubeida",
+     "burial": "2023-08-14"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -13883,7 +14085,11 @@
     "lot": 29,
     "space": "C2",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "KHATOON, Narjis",
+     "burial": "2019-03-30"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -13920,7 +14126,8 @@
     "lot": 29,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SYED, Ashher"
    },
    "geometry": {
     "type": "Polygon",
@@ -13957,7 +14164,8 @@
     "lot": 29,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SYED, Ashher"
    },
    "geometry": {
     "type": "Polygon",
@@ -13994,7 +14202,8 @@
     "lot": 29,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "ZAIDI, Qamar"
    },
    "geometry": {
     "type": "Polygon",
@@ -14031,7 +14240,8 @@
     "lot": 29,
     "space": "D2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "ZAIDI, Qamar"
    },
    "geometry": {
     "type": "Polygon",
@@ -14068,7 +14278,8 @@
     "lot": 29,
     "space": "D3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SHAH, Syed Ijlal"
    },
    "geometry": {
     "type": "Polygon",
@@ -14105,7 +14316,8 @@
     "lot": 29,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SHAH, Syed Ijlal"
    },
    "geometry": {
     "type": "Polygon",
@@ -14401,7 +14613,11 @@
     "lot": 30,
     "space": "B4",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "KHUDADAD, Nadir",
+     "burial": "2018-11-10"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -15326,7 +15542,8 @@
     "lot": 32,
     "space": "A1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "ZAIDI, Murtuza"
    },
    "geometry": {
     "type": "Polygon",
@@ -15363,7 +15580,8 @@
     "lot": 32,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "ZAIDI, Murtuza"
    },
    "geometry": {
     "type": "Polygon",
@@ -15622,7 +15840,8 @@
     "lot": 32,
     "space": "C1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BANDALI, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -15659,7 +15878,8 @@
     "lot": 32,
     "space": "C2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BANDALI, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -15696,7 +15916,8 @@
     "lot": 32,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BANDALI, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -15733,7 +15954,8 @@
     "lot": 32,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BANDALI, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -16362,7 +16584,11 @@
     "lot": 33,
     "space": "D2",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "KARIM, Hayat",
+     "burial": "2024-03-10"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -16510,7 +16736,8 @@
     "lot": 34,
     "space": "A2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "POURGHORAISHI, Martha"
    },
    "geometry": {
     "type": "Polygon",
@@ -16547,7 +16774,8 @@
     "lot": 34,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BHIMJI, Murtaza"
    },
    "geometry": {
     "type": "Polygon",
@@ -16584,7 +16812,8 @@
     "lot": 34,
     "space": "A4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "BHIMJI, Murtaza"
    },
    "geometry": {
     "type": "Polygon",
@@ -17583,7 +17812,11 @@
     "lot": 35,
     "space": "D3",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "SHIRAZEE, Farooq",
+     "burial": "2018-01-05"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -17620,7 +17853,8 @@
     "lot": 35,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SHIRAZEE, Razia"
    },
    "geometry": {
     "type": "Polygon",
@@ -18323,7 +18557,8 @@
     "lot": 47,
     "space": "A3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "TABATABAI, Kasim"
    },
    "geometry": {
     "type": "Polygon",
@@ -18360,7 +18595,8 @@
     "lot": 47,
     "space": "A4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "TABATABAI, Kasim"
    },
    "geometry": {
     "type": "Polygon",
@@ -18841,7 +19077,11 @@
     "lot": 48,
     "space": "A1",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "SHARAFUDDIN, Essam",
+     "burial": "2020-05-10"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -19211,7 +19451,8 @@
     "lot": 48,
     "space": "C3",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SHARAFUDDIN, Essam"
    },
    "geometry": {
     "type": "Polygon",
@@ -19285,7 +19526,8 @@
     "lot": 48,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SAGHAFI, Reza"
    },
    "geometry": {
     "type": "Polygon",
@@ -19322,7 +19564,8 @@
     "lot": 48,
     "space": "D2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SAGHAFI, Reza"
    },
    "geometry": {
     "type": "Polygon",
@@ -19359,7 +19602,11 @@
     "lot": 48,
     "space": "D3",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "AKHAVIPOUR, Saeideh",
+     "burial": "2022-12-17"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -19396,7 +19643,8 @@
     "lot": 48,
     "space": "D4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SAGHAFI, Reza"
    },
    "geometry": {
     "type": "Polygon",
@@ -20173,7 +20421,8 @@
     "lot": 50,
     "space": "B1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SANJAR, Fatemeh"
    },
    "geometry": {
     "type": "Polygon",
@@ -20210,7 +20459,8 @@
     "lot": 50,
     "space": "B2",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SANJAR, Fatemeh"
    },
    "geometry": {
     "type": "Polygon",
@@ -21616,7 +21866,11 @@
     "lot": 52,
     "space": "C4",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "SALMAN, Kadhim Dr.",
+     "burial": "2021-10-03"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -21653,7 +21907,8 @@
     "lot": 52,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "SALMAN, Jennan"
    },
    "geometry": {
     "type": "Polygon",
@@ -23947,7 +24202,11 @@
     "lot": 56,
     "space": "C3",
     "status": "occupied",
-    "color": "darkblue"
+    "color": "darkblue",
+    "person": {
+     "name": "IBRAHIM, Ali",
+     "burial": "2022-12-13"
+    }
    },
    "geometry": {
     "type": "Polygon",
@@ -23984,7 +24243,8 @@
     "lot": 56,
     "space": "C4",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "IBRAHIM, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -24021,7 +24281,8 @@
     "lot": 56,
     "space": "D1",
     "status": "vacant",
-    "color": "lightblue"
+    "color": "lightblue",
+    "owner": "IBRAHIM, Abbas"
    },
    "geometry": {
     "type": "Polygon",
@@ -24823,6 +25084,47 @@
       [
        -97.66235765978361,
        30.437233316046317
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "59-D4",
+    "lot": 59,
+    "space": "D4",
+    "status": "buried",
+    "color": "red",
+    "person": {
+     "name": "MOHAMMADI, Mahmoud",
+     "burial": "2025-10-09"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.66253208307613,
+       30.4372100292156
+      ],
+      [
+       -97.66253970306154,
+       30.437203902748116
+      ],
+      [
+       -97.66256102031561,
+       30.43722361224421
+      ],
+      [
+       -97.6625534003302,
+       30.43722973871169
+      ],
+      [
+       -97.66253208307613,
+       30.4372100292156
       ]
      ]
     ]

@@ -11,9 +11,9 @@
  ],
  "status_counts": {
   "unowned": 278,
-  "buried": 100,
-  "occupied": 30,
-  "vacant": 129,
+  "buried": 101,
+  "occupied": 34,
+  "vacant": 125,
   "unusable": 22,
   "bohri": 64,
   "other": 48
@@ -2220,8 +2220,8 @@
    "lot": 15,
    "space": "A4",
    "id": "15-A4",
-   "color": "lightblue",
-   "status": "vacant",
+   "color": "darkblue",
+   "status": "occupied",
    "rect_px": [
     1143.8,
     1151.3,
@@ -2246,8 +2246,8 @@
    "lot": 15,
    "space": "B2",
    "id": "15-B2",
-   "color": "lightblue",
-   "status": "vacant",
+   "color": "darkblue",
+   "status": "occupied",
    "rect_px": [
     1283.8,
     1151.3,
@@ -3806,8 +3806,8 @@
    "lot": 24,
    "space": "A1",
    "id": "24-A1",
-   "color": "lightblue",
-   "status": "vacant",
+   "color": "darkblue",
+   "status": "occupied",
    "rect_px": [
     1494.0,
     1561.8,
@@ -4729,8 +4729,8 @@
    "lot": 28,
    "space": "C3",
    "id": "28-C3",
-   "color": "lightblue",
-   "status": "vacant",
+   "color": "darkblue",
+   "status": "occupied",
    "rect_px": [
     2194.4,
     1993.1,
@@ -8740,6 +8740,19 @@
     1665.7,
     3385.6,
     1768.7
+   ]
+  },
+  {
+   "lot": 59,
+   "space": "D4",
+   "id": "59-D4",
+   "color": "red",
+   "status": "buried",
+   "rect_px": [
+    4296.4,
+    1992.6,
+    4366.4,
+    2095.6
    ]
   }
  ]

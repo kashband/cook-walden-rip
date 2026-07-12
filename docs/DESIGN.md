@@ -58,15 +58,27 @@ dashed (likely future). The diagram is rotated relative to the ground: ~120° cl
 brings it into alignment. This document is the source of truth for IDs and statuses;
 imagery is only for georeferencing, and the field survey adds person data.
 
-Legend (owner-confirmed semantics, 2026-07-07; counts from the legible legend render):
-dark red = **buried**, not IABA community (100) · dark blue = **occupied** by IABA
-community, needs person labels (30) · light blue = **vacant** for IABA community —
-the actual inventory (128*) · white = **unowned**, likely cemetery-available but not
-IABA's (278) · gray = **bohri**, adjacent community (64) · dark gray = **other**
-community, unconfirmed (48, not in the legend) · green = **unusable** obstacles
-between graves (22). *The diagram actually contains 129 light-blue spaces — legend
-tally likely stale (docs/OPEN-QUESTIONS.md). `scripts/digitize_layout.py export`
-validates per-color counts against the legend.
+Legend (owner-confirmed semantics, 2026-07-07/12; counts per CW.xlsx, 2026-07-12):
+dark red = **buried** (101; all but one predate/aren't from the IABA community) ·
+dark blue = **occupied** by IABA community (34) · light blue = **vacant**,
+member-deeded (125) · white = **unowned**, likely cemetery-available but not IABA's
+(278) · gray = **bohri**, adjacent community (64) · dark gray = **other** community,
+unconfirmed (48, not in the legend) · green = **unusable** obstacles between graves
+(22). The PDF is a stale snapshot — `COLOR_OVERRIDES` in the digitizer applies the
+five post-PDF changes recorded in the workbook (four 2025 burials on vacant spaces +
+burial 59-D4 in dashed lot 59). `scripts/digitize_layout.py export` validates
+per-color counts against the workbook legend.
+
+### Records workbook (CW.xlsx, 2026-07-12 — kept out of the repo)
+
+IABA's internal tracking sheet; the PDF diagram was exported from its grid tabs.
+`All` lists every member-owned space (owner, used flag, burial date, deceased,
+notes), `Burials` lists burials. IDs are `4A-2` ↔ map `04-A2`.
+`scripts/import_records.py <path>` re-syncs statuses from the digitized layout and
+merges owner/person data into `data/plots.geojson` — re-run it whenever IABA sends
+an updated workbook. Name corrections confirmed by the owner live in its
+`CORRECTIONS` dict. The Notes column (Deeded/AB/anecdotes) is internal — never
+exported. Owner names are published on vacant plots only.
 
 **Digitized** by `scripts/digitize_layout.py` (labels stage → cells QA stage →
 export): finds the 52 orange lot labels, measures the 560×206 px lot frames from
@@ -112,9 +124,9 @@ visitors never see it.
 
   | Status    | Diagram color | Meaning                                    |
   |-----------|---------------|--------------------------------------------|
-  | buried    | dark red      | burial present, not IABA community         |
-  | occupied  | dark blue     | IABA community burial (person data TBD)    |
-  | vacant    | light blue    | open for IABA community — inquiry link     |
+  | buried    | dark red      | burial present (all but 59-D4 not IABA)    |
+  | occupied  | dark blue     | IABA community burial (name + date shown)  |
+  | vacant    | light blue    | member-deeded, unused — owner shown        |
   | unowned   | white         | not IABA-owned (likely cemetery inventory) |
   | bohri     | light gray    | adjacent Bohri community                   |
   | other     | dark gray     | probably another community (unconfirmed)   |
@@ -128,10 +140,11 @@ visitors never see it.
 Sidebar panel on desktop, bottom sheet on mobile, addressable as `#/plot/14-B3`.
 
 - Plot ID, lot/space, status badge, per-status explanation copy
-- **Occupied:** person name, dates (dob/dod), optional notes when present; photos later
-- **Vacant:** "Contact IABA about this plot" — `mailto:` link with subject/body
-  prefilled with the plot ID (email placeholder until IABA provides the real contact).
-  No forms, no payments.
+- **Occupied/buried with records:** deceased name + burial date; photos later
+- **Vacant:** owner name ("Owned by …") + "Contact IABA about this plot" — `mailto:`
+  link with subject/body prefilled with the plot ID (email placeholder until IABA
+  provides the real contact). Nothing is for sale outright; IABA connects interested
+  buyers with the owner. No forms, no payments.
 - All statuses carry a "demo data" disclaimer
 
 ## Search

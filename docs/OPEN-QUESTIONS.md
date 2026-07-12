@@ -3,38 +3,30 @@
 Unknowns that need the project owner or IABA. **Do not invent answers to these** —
 build around them (placeholder data, clearly marked) until resolved.
 
-## Layout diagram (data/reference/IABA-Layout.pdf)
+## Layout diagram & records
 - [ ] **Dark gray — which community?** Owner says "probably another community,
       similar to Bohri" (lots 31, 36 and halves of 30/35, 48 spaces). Confirm who,
       so status `other` can get a proper name.
-- [ ] **Vacant count off by one** — the legend says Vacant (128), but the diagram
-      contains 129 decisively light-blue spaces. Likely a stale hand tally in the
-      source doc; confirm with IABA which space changed.
-- [ ] **Vacant plot details** — owner: vacant spaces "should have some details around
-      it". What details? (pricing? eligibility? reservation process?)
-- [ ] Lots 59–62 are drawn dashed — future/unbuilt lots? Lot 58 is partial.
-- [ ] How current is the diagram (as-of date?), and who maintains the authoritative
-      copy — will IABA share updates as plots sell?
+- [ ] Lots 60–62 are drawn dashed — future/unbuilt lots? Lot 58 is partial. (Lot 59
+      already has one burial, 59-D4, so the "future" row is at least partly real.)
+- [ ] Who maintains the authoritative copy of CW.xlsx — will IABA share updates as
+      spaces change hands, so `scripts/import_records.py` can be re-run?
+- [ ] First names Zeenat vs "Zeneth" (6C-3) — surname confirmed SHAFIGHI, but the two
+      sheets also disagree on the first name; kept `Zeenat` (All sheet).
 
 ## Section geometry
 - [ ] Exact boundary of the IABA-owned section — we have a center coordinate, not
       edges. Eyeball from imagery for M1; confirm on the ground or from Cook-Walden
-      paperwork later.
-
-## Records
-- [ ] Which spaces map to which *people* — owner confirms dark-blue (occupied)
-      spaces "need to be labelled"; names/dates come from records or the field survey.
+      paperwork later. (59-D4 renders right at the eyeballed boundary edge — a good
+      spot-check for both.)
 
 ## Contact & pitch
 - [ ] Correct IABA contact (email/phone) for the "Contact IABA about this plot" link.
 - [ ] Who at IABA is the audience for the pitch demo, and what would make it land?
 
 ## Privacy & propriety
-- [ ] Is IABA/the community comfortable publishing deceased names + plot locations on
-      a public site? (Chronicle does this, and headstones are public, but get a nod
-      before deploying beyond localhost — especially for recent burials.)
-- [ ] Any sensitivity about marking specific plots "available for purchase" publicly
-      before IABA blesses the project?
+- [ ] Owner OK'd deceased names + vacant-plot owner names (2026-07-12) for the demo;
+      get IABA's own nod before deploying beyond localhost.
 
 ## Resolved
 (move answered questions here with the answer and date)
@@ -60,3 +52,20 @@ build around them (placeholder data, clearly marked) until resolved.
 - 2026-07-07 — **Placement calibrated by owner** in the editor: rotation 137° CW,
   1.0 m × 3.0 m spaces, anchor 30.437269, -97.662204 → data/plots.geojson (M2 done).
   Resolves exact rotation and space dimensions.
+- 2026-07-12 — **IABA records workbook (CW.xlsx) obtained and reconciled.** All 159
+  member-space IDs map 1:1 to the map's convention (`4A-2` ↔ `04-A2`); 48/48 lots'
+  grid colors match the digitization. Resolves:
+  - *Vacant 128 vs 129*: our 129 was correct; the workbook shows 125 after four 2025
+    burials (15-A4, 15-B2, 24-A1, 28-C3) — PDF legend "128" was a stale tally.
+  - *Person data*: 35 burials + 125 vacant-plot owners imported by
+    `scripts/import_records.py` (owner-confirmed name corrections inside: Essam
+    SHARAFUDDIN is the deceased at 48-A1; SHAFIGHI / Masoomeh / Mohamedali / MOADDEB
+    spellings).
+  - *"AB" in Notes*: title held in Abbas Bandali's name; actual ownership is the
+    Owner column. Ignored per owner.
+  - *No open inventory*: every vacant space is member-deeded → no purchase flow;
+    vacant plots show their owner instead (see CLAUDE.md).
+  - *59-D4*: real burial (MOHAMMADI, Mahmoud, 2025-10-09) in dashed lot 59; added to
+    the map as `buried` with the person shown, per owner.
+  - *Deceased-name privacy (demo scope)*: OK to publish deceased names and
+    vacant-plot owner names for now.

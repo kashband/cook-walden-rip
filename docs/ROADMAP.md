@@ -47,15 +47,16 @@ out not to be IABA-owned). Contact email is a placeholder pending the real one.
 **Done:** clicking any plot flies to it and opens its detail; the URL is shareable
 (reload lands on the same plot); a vacant plot's contact link opens a prefilled email.
 
-## ☐ M5 — Survey pass (field work + data entry)
+## ☑ M5 — Person data (2026-07-12; records import replaced the survey)
 
-Owner walks the section to verify the digitized layout against the ground and collect
-person data (names/dates from markers) for occupied plots. Update `plots.geojson`
-accordingly. Stretch: tap-to-cycle status in the editor so the survey can be done on a
-phone standing at the grave.
+IABA's internal records workbook (CW.xlsx) supplied what the field survey was for:
+`scripts/import_records.py` merges 35 burials (deceased + burial date) and 125
+vacant-plot owners into `plots.geojson`, syncs the five post-PDF status changes, and
+adds plot 59-D4. Owner-confirmed name corrections live in the script.
 
-**Done when:** the demo section of the data reflects reality well enough to show IABA
-without embarrassment (see docs/OPEN-QUESTIONS.md re: publishing names).
+**Done:** every occupied plot shows a person, every vacant plot shows its owner, and
+the import is re-runnable against future workbook updates. A field walk is now only
+needed for validation/photos (stretch, folded into M6+).
 
 ## ☐ M6 — Polish & deploy
 

@@ -67,8 +67,19 @@ COLOR_TO_STATUS = {
     "green": "unusable",
 }
 
-# Expected per-color counts from the legible legend render (2026-07-06).
-EXPECTED_COLOR_COUNTS = {"red": 100, "darkblue": 30, "lightblue": 128, "gray": 64, "green": 22}
+# The PDF diagram is a stale snapshot: IABA's records workbook
+# (data/reference/CW.xlsx, obtained 2026-07-12) shows five spaces that changed
+# after the PDF was made. Applied here so the digitized data matches the records.
+COLOR_OVERRIDES: dict[tuple[int, str], str] = {
+    (15, "A4"): "darkblue",  # RIZVI burial 2025-10-28
+    (15, "B2"): "darkblue",  # BARZEGARFAR burial 2025-07-10
+    (24, "A1"): "darkblue",  # KAZMI burial 2025-01-04
+    (28, "C3"): "darkblue",  # BAHRAMI burial 2025-07-03
+    (59, "D4"): "red",       # MOHAMMADI burial 2025-10-09 (lot 59 is dashed in the PDF)
+}
+
+# Expected per-color counts from CW.xlsx's layout sheet legend (2026-07-12).
+EXPECTED_COLOR_COUNTS = {"red": 101, "darkblue": 34, "lightblue": 125, "gray": 64, "green": 22}
 
 SPACES = [  # (space code, col 0..7, row 0..1)
     *[(f"A{i+1}", i, 0) for i in range(4)],
@@ -226,8 +237,12 @@ def stage_cells(export=False):
             if allowed is not None and space not in allowed:
                 continue
             color = classify_patch(rgb, alpha, sx0, sy0, sx1, sy1, masked)
-            if color != "absent":
+            if (lot, space) in COLOR_OVERRIDES:
+                color = COLOR_OVERRIDES[lot, space]
+                status = COLOR_TO_STATUS[color]
+            else:
                 status = "future" if lot in FUTURE_LOTS else COLOR_TO_STATUS.get(color, "unknown")
+            if color != "absent":
                 records.append(
                     {
                         "lot": lot,

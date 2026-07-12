@@ -18,10 +18,16 @@ constraint (static site, deployable to GitHub Pages).
 - **Official layout diagram in hand** (2026-07-05): `data/reference/IABA-Layout.pdf`
   (+ rendered PNG). 52 lots (01–36, 47–62; 37–46 don't exist) of up to 16 spaces each
   (A1–A4/B1–B4 over C1–C4/D1–D4, 8 wide × 2 deep), color-coded by status. **Digitized**
-  to `data/reference/layout-spaces.json` (671 spaces, statuses + pixel geometry) by
+  to `data/reference/layout-spaces.json` (672 spaces, statuses + pixel geometry) by
   `scripts/digitize_layout.py`, then **placed on the ground by the owner** (2026-07-07:
-  rotation 137° CW, 1.0 m × 3.0 m spaces) → `data/plots.geojson`. Person-level burial
-  records still come from the owner's survey.
+  rotation 137° CW, 1.0 m × 3.0 m spaces) → `data/plots.geojson`.
+- **IABA records workbook in hand** (2026-07-12): `CW.xlsx` (kept OUT of the repo —
+  internal doc; lives in the owner's Downloads). Sheets: `All` (159 member-owned
+  spaces: owner, used flag, burial date, deceased), `Burials` (35 burials), plus the
+  colored grid sheets the PDF was exported from. Space IDs use `4A-2` = our `04-A2`.
+  It post-dates the PDF: 4 vacant→used changes + burial `59-D4` in dashed lot 59
+  (see `COLOR_OVERRIDES` in the digitizer). Merged into `data/plots.geojson` by
+  `scripts/import_records.py` (re-runnable; name corrections inside).
 
 ## Locked decisions (2026-07-05, with project owner)
 
@@ -34,9 +40,11 @@ constraint (static site, deployable to GitHub Pages).
 - **Labeling (updated 2026-07-05):** the real IABA scheme from the layout diagram —
   lot number + space code, plot ID format `"14-B3"` (lot 14, space B3). The earlier
   `A-1` placeholder scheme is obsolete.
-- **Purchase flow (updated 2026-07-07):** **vacant** plots (light blue — the
-  community's actual inventory; white spaces are NOT IABA-owned) show a "Contact IABA"
-  mailto link with the plot ID prefilled. No forms, no payments, no e-commerce.
+- **Purchase flow (updated 2026-07-12):** there is currently **nothing for sale** —
+  every vacant (light blue) space is deeded to a community member, and white spaces
+  are NOT IABA-owned. Vacant plots display their **owner's name** (approved by owner
+  2026-07-12) plus a "Contact IABA" mailto so interested buyers can be connected with
+  the owner. Direct-purchase UX only becomes relevant if IABA expands the section.
   Contact email is a placeholder (`src/config.ts`) until IABA provides the real one.
 
 ## Stack
@@ -59,9 +67,14 @@ status: "buried" | "occupied" | "vacant" | "unowned" | "bohri" | "other" | "unus
                     // gray=bohri (adjacent community) · darkgray=other community
                     // (unconfirmed) · green=tree/bench/obstacle
 color: "red" | ...  // original diagram color, kept alongside status
-person?: { name, dob?, dod?, notes? }   // only when occupied
+owner?: "MERALI, Taha"          // deed holder — published on VACANT plots only
+person?: { name, burial? }      // deceased + ISO burial date, on occupied/buried
 photos?: string[]   // future: marker photos from survey
 ```
+
+Privacy scope (owner-approved 2026-07-12): deceased names + burial dates are public;
+owner names are public on vacant plots only. The workbook's Notes column (Deeded/AB/
+anecdotes) is internal — never export it.
 
 ## Docs
 
