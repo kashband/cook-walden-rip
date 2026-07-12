@@ -18,7 +18,7 @@ export const ESRI_ATTRIBUTION =
  * Exported once from TxGIO's StratMap19_NCCIR_CapArea ImageServer and committed
  * to public/imagery/. Bounds must match the export bbox exactly.
  */
-export const TXGIO_OVERLAY_URL = "/imagery/iaba-2019-txgio.jpg";
+export const TXGIO_OVERLAY_URL = `${import.meta.env.BASE_URL}imagery/iaba-2019-txgio.jpg`;
 export const TXGIO_OVERLAY_BOUNDS: [[number, number], [number, number]] = [
   [30.43635, -97.6633],
   [30.43825, -97.6611],

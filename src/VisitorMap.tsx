@@ -24,6 +24,7 @@ import {
 import { DIAGRAM_COLORS, STATUS_COLORS, STATUS_LABELS } from "./layout";
 import { PLOTS, PLOT_BY_ID, STATUS_COUNTS, type Plot } from "./plots";
 import PlotDetail from "./PlotDetail";
+import SearchBox from "./SearchBox";
 
 const section = JSON.parse(sectionRaw) as GeoJSON.FeatureCollection;
 
@@ -114,6 +115,7 @@ export default function VisitorMap({ selectedId }: { selectedId?: string }) {
           })}
           <FlyToPlot plot={selected} />
         </MapContainer>
+        <SearchBox />
         <Legend />
       </div>
       {selected && (

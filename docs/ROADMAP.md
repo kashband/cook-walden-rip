@@ -58,10 +58,11 @@ adds plot 59-D4. Owner-confirmed name corrections live in the script.
 the import is re-runnable against future workbook updates. A field walk is now only
 needed for validation/photos (stretch, folded into M6+).
 
-## ☐ M6 — Polish & deploy
+## ☑ M6 — Polish & deploy (2026-07-12)
 
-Client-side name search (pan/zoom to result); GitHub Pages deployment; attribution and
-"demo data" disclaimers.
+Client-side search over deceased names / owners / plot IDs (pan/zoom to result);
+GitHub Pages deployment via Actions (`.github/workflows/deploy.yml`, Vite
+`base: "./"`); attribution and "demo data" disclaimers were in place since M3/M4.
 
 **Done when:** a public URL loads the map cold on a phone, search finds a known plot,
 and total hosting cost is $0.

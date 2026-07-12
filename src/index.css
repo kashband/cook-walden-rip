@@ -65,6 +65,68 @@ body {
   display: flex;
 }
 
+.search-box {
+  position: absolute;
+  top: 12px;
+  left: 54px;
+  z-index: 900;
+  width: min(300px, calc(100% - 120px));
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #57534e;
+  border-radius: 6px;
+  background: rgba(28, 25, 23, 0.9);
+  color: #fafaf9;
+  font-size: 0.85rem;
+}
+
+.search-box input::placeholder {
+  color: #a8a29e;
+}
+
+.search-results {
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding: 0.25rem;
+  background: rgba(28, 25, 23, 0.95);
+  border: 1px solid #44403c;
+  border-radius: 6px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-results button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #fafaf9;
+  padding: 0.4rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.search-results button:hover {
+  background: #44403c;
+}
+
+.search-results button span {
+  color: #a8a29e;
+  font-size: 0.72rem;
+}
+
+.search-results .empty {
+  color: #a8a29e;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.5rem;
+}
+
 .map-legend {
   position: absolute;
   bottom: 12px;

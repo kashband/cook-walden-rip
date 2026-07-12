@@ -149,9 +149,10 @@ Sidebar panel on desktop, bottom sheet on mobile, addressable as `#/plot/14-B3`.
 
 ## Search
 
-Simple client-side name search over `plots.geojson` properties (a text input filtering
-occupied/reserved plots; selecting a result pans/zooms to the plot and opens its
-detail). Cheap because the whole dataset is already in memory.
+Client-side substring search (`src/SearchBox.tsx`, top-left of the map) over deceased
+names, vacant-plot owners, and plot IDs — ranked in that order, max 8 results.
+Selecting a result (click or Enter) flies to the plot and opens its detail. Cheap
+because the whole dataset is already in memory.
 
 ## Future phases (explicitly out of POC scope)
 

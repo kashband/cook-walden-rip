@@ -4,3 +4,5 @@ data/reference/debug/
 *.local
 .DS_Store
 __pycache__/
+
+data/reference/CW.xlsx
