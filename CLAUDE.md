@@ -47,6 +47,29 @@ constraint (static site, deployable to GitHub Pages).
   the owner. Direct-purchase UX only becomes relevant if IABA expands the section.
   Contact email is a placeholder (`src/config.ts`) until IABA provides the real one.
 
+## Going live (decided 2026-09-19; build in progress)
+
+Moving from the public GitHub Pages demo to a real, private-code, admin-editable site.
+Runbook: `docs/DEPLOY.md`.
+
+- **Host:** Cloudflare Pages (free, builds a **private** repo on push, custom domain,
+  auto HTTPS). Replaces GitHub Pages (which forced the repo public). Domain: a fresh
+  one, `cookwalden.rip` (or similar).
+- **Data:** Supabase. The mutable **records** (status, owner, person, notes) move into a
+  `plots` table; the public site reads only the filtered `public_plots` VIEW (hides
+  `internal_notes`, shows `owner` only when vacant). Admins log in to edit. This retires
+  CW.xlsx as the source of truth — no spreadsheet in the pipeline. Schema + seed live in
+  `supabase/`; `scripts/export_seed.py` regenerates the seed from plots.geojson.
+- **Geometry stays static & public:** plot polygons aren't sensitive and never change, so
+  they remain a repo file the client joins to the fetched records by `id`. Digitizing/
+  placement stays a dev-only task; admins only ever edit records.
+- **Privacy boundary = the database view, not the editor.** The public `anon` key can
+  only read `public_plots`; the raw table is RLS-locked to authenticated admins. Never
+  ship the service_role key or let the site read the base table.
+- **Pending code change:** refactor the data layer from "records baked into the bundle"
+  to "fetch `public_plots` at load, merge with static geometry." Until then the app still
+  runs off the committed plots.geojson.
+
 ## Stack
 
 Vite + React + TypeScript · Leaflet (`react-leaflet`) · `@turf/turf` for grid math ·
