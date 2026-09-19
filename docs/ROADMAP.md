@@ -72,3 +72,23 @@ One-time setup gotcha: the workflow's `GITHUB_TOKEN` can't create the Pages site
 integration"), even on a public repo. The site was created once out-of-band
 (`gh api repos/<owner>/<repo>/pages -X POST -f build_type=workflow`); after that
 the workflow deploys on every push to `main` with no special enablement flag.
+
+## ◐ M7 — Real launch: private hosting + admin-editable database (2026-09-19)
+
+Team approved the demo; taking it live for real. Full runbook in `docs/DEPLOY.md`.
+
+- **Cloudflare Pages** hosting off a **private** repo (replaces public GitHub Pages);
+  fresh domain `cookwalden.rip`.
+- **Supabase** as the records database: `plots` table + RLS + filtered `public_plots`
+  view (schema `supabase/schema.sql`, seed `supabase/seed.sql` from
+  `scripts/export_seed.py`). Admin logs in to edit; public reads only the safe view.
+  Retires CW.xlsx as source of truth.
+- **Code change (pending):** data layer fetches `public_plots` at load and joins it to a
+  static geometry file, instead of baking records into the bundle.
+
+**Done when:** the site loads on `cookwalden.rip` from a private repo, an admin can log
+in and change a plot and see it update live, and no private field (internal notes, or an
+owner on a non-vacant plot) is reachable by the public key.
+
+**Backend foundation done (2026-09-19):** schema, safe view, RLS, seed generator, and the
+DEPLOY runbook committed. Remaining: client refactor + the account/domain setup (owner).
