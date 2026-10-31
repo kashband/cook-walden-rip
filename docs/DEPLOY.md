@@ -1,5 +1,11 @@
 # Going live: hosting, database & domain
 
+> **⚠️ Partly obsolete (2026-10-31).** Supabase (Part A) and the custom domain
+> (Part C) were dropped. v1 embeds the Cloudflare Pages site on
+> iaba-austin.org/cemetery/ and edits data with a git-backed admin portal (see
+> CLAUDE.md, "Going live — v1"). Part B (Cloudflare Pages) still applies. This
+> guide will be rewritten under ROADMAP M8.
+
 A step-by-step runbook for taking the map from the demo to a real, private-code,
 admin-editable site. Written for someone new to this — follow it top to bottom.
 

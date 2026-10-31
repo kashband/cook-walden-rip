@@ -9,8 +9,8 @@ build around them (placeholder data, clearly marked) until resolved.
       so status `other` can get a proper name.
 - [ ] Lots 60–62 are drawn dashed — future/unbuilt lots? Lot 58 is partial. (Lot 59
       already has one burial, 59-D4, so the "future" row is at least partly real.)
-- [ ] Who maintains the authoritative copy of CW.xlsx — will IABA share updates as
-      spaces change hands, so `scripts/import_records.py` can be re-run?
+- [ ] Who are the admins (email allow-list for the v1 admin portal)? The portal
+      replaces re-importing CW.xlsx: the admin edits plots directly.
 - [ ] First names Zeenat vs "Zeneth" (6C-3) — surname confirmed SHAFIGHI, but the two
       sheets also disagree on the first name; kept `Zeenat` (All sheet).
 
@@ -20,16 +20,22 @@ build around them (placeholder data, clearly marked) until resolved.
       paperwork later. (59-D4 renders right at the eyeballed boundary edge — a good
       spot-check for both.)
 
-## Contact & pitch
-- [ ] Correct IABA contact (email/phone) for the "Contact IABA about this plot" link.
-- [ ] Who at IABA is the audience for the pitch demo, and what would make it land?
+## Launch (v1)
+- [ ] Launch wording to replace the "Demo" banner and disclaimer.
 
 ## Privacy & propriety
-- [ ] Owner OK'd deceased names + vacant-plot owner names (2026-07-12) for the demo;
-      get IABA's own nod before deploying beyond localhost.
+- [ ] Owner OK'd deceased names + vacant-plot owner names (2026-07-12) and considers
+      them public records (2026-10-31); get IABA leadership's formal nod before the
+      v1 embed is announced.
 
 ## Resolved
 (move answered questions here with the answer and date)
+- 2026-10-31 — **Pitch landed; going live as v1.** Leadership approved the demo
+  (frozen as `release/0.1`). Hosting: IABA gave us https://iaba-austin.org/cemetery/
+  (a WordPress page); we embed the Cloudflare Pages site there. Data stays in repo
+  files with a git-backed admin portal; Supabase (M7) dropped. Contact email:
+  abandali@gmail.com. Records are "relatively accurate" as of the July import; the
+  admin portal is how they'll be corrected going forward.
 - 2026-07-05 — Stack/architecture/scope decisions locked; see CLAUDE.md.
 - 2026-07-05 — **A real layout document exists**: owner produced IABA-Layout.pdf
   (committed under data/reference/). Resolves: real numbering scheme (lot 01–62 +

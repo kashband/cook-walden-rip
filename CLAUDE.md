@@ -6,9 +6,12 @@ plot polygons over aerial imagery, color-coded by status, click a plot for detai
 
 ## Purpose & audience
 
-A **pitch demo for IABA leadership** — a working proof of concept, not production software.
-Fake/partial data is acceptable; visual credibility matters. Zero hosting cost is a hard
-constraint (static site, deployable to GitHub Pages).
+Started as a **pitch demo for IABA leadership** (v0.1, frozen on branch `release/0.1`,
+still served at kashband.github.io/cook-walden-rip). Leadership approved it; we are now
+building **v1, the live community site**, embedded at https://iaba-austin.org/cemetery/.
+It's a small community tool, not a high-traffic product: favor the **least-effort,
+fewest-services** option, and make editing the data easy for a non-technical admin.
+Zero hosting cost is still a hard constraint.
 
 ## Key facts
 
@@ -31,8 +34,9 @@ constraint (static site, deployable to GitHub Pages).
 
 ## Locked decisions (2026-07-05, with project owner)
 
-- **Static site, no backend, no auth.** Plot data lives in flat files in the repo;
-  updates are file edits.
+- **Static site, data in repo files.** Plot data lives in flat files in the repo;
+  updates are file edits. (v1 adds an admin login + one tiny save endpoint that edits
+  those files for you — see "Going live" below. Still no database.)
 - **Geo-accurate map:** Leaflet over Esri World Imagery satellite tiles; plots are
   GeoJSON polygons at real lat/lng. (Google tiles are license-prohibited for this use.)
 - **Grid authoring:** a dev-only in-app grid generator/editor (`/editor` route) that
@@ -45,30 +49,36 @@ constraint (static site, deployable to GitHub Pages).
   are NOT IABA-owned. Vacant plots display their **owner's name** (approved by owner
   2026-07-12) plus a "Contact IABA" mailto so interested buyers can be connected with
   the owner. Direct-purchase UX only becomes relevant if IABA expands the section.
-  Contact email is a placeholder (`src/config.ts`) until IABA provides the real one.
+  Contact email: `abandali@gmail.com` (`src/config.ts`, owner-provided 2026-10-31).
 
-## Going live (decided 2026-09-19; build in progress)
+## Going live — v1 (decided 2026-10-31, owner)
 
-Moving from the public GitHub Pages demo to a real, private-code, admin-editable site.
-Runbook: `docs/DEPLOY.md`.
+Work happens on `launch/v1`; the v1 launch checklist is milestone M8 in
+`docs/ROADMAP.md`.
 
-- **Host:** Cloudflare Pages (free, builds a **private** repo on push, custom domain,
-  auto HTTPS). Replaces GitHub Pages (which forced the repo public). Domain: a fresh
-  one, `cookwalden.rip` (or similar).
-- **Data:** Supabase. The mutable **records** (status, owner, person, notes) move into a
-  `plots` table; the public site reads only the filtered `public_plots` VIEW (hides
-  `internal_notes`, shows `owner` only when vacant). Admins log in to edit. This retires
-  CW.xlsx as the source of truth — no spreadsheet in the pipeline. Schema + seed live in
-  `supabase/`; `scripts/export_seed.py` regenerates the seed from plots.geojson.
-- **Geometry stays static & public:** plot polygons aren't sensitive and never change, so
-  they remain a repo file the client joins to the fetched records by `id`. Digitizing/
-  placement stays a dev-only task; admins only ever edit records.
-- **Privacy boundary = the database view, not the editor.** The public `anon` key can
-  only read `public_plots`; the raw table is RLS-locked to authenticated admins. Never
-  ship the service_role key or let the site read the base table.
-- **Pending code change:** refactor the data layer from "records baked into the bundle"
-  to "fetch `public_plots` at load, merge with static geometry." Until then the app still
-  runs off the committed plots.geojson.
+- **Hosting = embed.** The app is hosted on **Cloudflare Pages** (free, builds a
+  **private** repo on every push, auto HTTPS). IABA's web admin embeds it with an
+  iframe on the WordPress page https://iaba-austin.org/cemetery/ (WP Engine +
+  Elementor). Code updates go live automatically, with no re-upload by IABA. No custom
+  domain is needed (`cookwalden.rip` is dropped).
+- **Data stays in the repo; no database.** Supabase was designed (M7) and then
+  **dropped**: free projects pause after about a week without traffic, and it's one more
+  service and account to hand off. The records are already public on the map, so they
+  don't need a database's access rules; they just need a controlled way to edit them.
+- **Admin portal (git-backed):** the admin opens `/admin` on the Cloudflare URL (not
+  inside the iframe; logins don't work reliably in embeds), signs in with an emailed
+  code (**Cloudflare Access**, free, allow-list of emails), clicks a plot, edits it, and
+  saves. A small **Cloudflare Pages Function** commits the updated records file to
+  GitHub with a server-side token, and Cloudflare rebuilds the site in about a minute.
+  No one runs a manual redeploy. Every edit is a commit, so the history and undo are
+  free.
+- **Data split (planned):** static, never-edited geometry (polygons + `metadata.params`)
+  vs a small `records` file (status, owner, person) that the admin portal edits. The
+  client joins the two by `id`. Placing or digitizing new spaces stays a dev-only task.
+- **What stays private:** the repo (Cloudflare reads it privately), the GitHub token
+  (a Cloudflare secret, never in the bundle), and CW.xlsx (never committed). The
+  workbook's internal Notes are out of scope for v1: anything in the records file
+  ships to browsers.
 
 ## Stack
 
@@ -102,11 +112,16 @@ anecdotes) is internal — never export it.
 ## Docs
 
 - `docs/DESIGN.md` — architecture, imagery/licensing, grid-generator UX, plot detail spec
-- `docs/ROADMAP.md` — milestones M1–M6 with acceptance criteria; check here for current phase
+- `docs/ROADMAP.md` — milestones M1–M8 with acceptance criteria; **M8 = v1 launch
+  checklist**; check here for current phase
+- `docs/DEPLOY.md` — hosting/setup runbook (Supabase parts are obsolete; being rewritten
+  for the git-backed admin)
 - `docs/OPEN-QUESTIONS.md` — unknowns that need the owner or IABA; check before inventing facts
 
 ## Conventions
 
 - Don't present invented data (names, statuses, boundaries) as real — mark demo data clearly.
 - Keep everything runnable with `npm install && npm run dev`, no API keys or paid services.
+  (Production-only secrets, like the admin save token, live in Cloudflare; local dev
+  must work without them.)
 - When a decision here changes, update this file and the relevant doc in the same commit.
